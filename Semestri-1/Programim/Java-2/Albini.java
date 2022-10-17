@@ -1,32 +1,27 @@
+package Java2;
+
 import java.util.Scanner;
 
 public class Albini {
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        while (true) {
+//      Inputs
+            System.out.print("Sa është numrin i miqëve: ");
+            int numri_i_miqve = s.nextInt();
 
-		Scanner S = new Scanner(System.in);
-		
-//		input
-			int NumriIMiqve = 0;
-			int SasiaEShisheve = 0;
-			int SasiaEGotave = 0;
+            System.out.print("Sa është sasia e gotes (ml): ");
+            int sasia_e_gotes = s.nextInt();
 
-			int NumriISHisheve = 0;
+            System.out.print("Sa është sasia e shises (ml): ");
+            int sasia_e_shishes = s.nextInt();
 
-			System.out.print("Sa është numri i miqëve: ");
-			NumriIMiqve = S.nextInt();
+//      Proces
+            int formula = 1 + (numri_i_miqve / (sasia_e_shishes / sasia_e_gotes) );
 
-			System.out.print("Sa është sasia e shishes(ml): ");
-			SasiaEShisheve = S.nextInt();
-
-			System.out.print("Sa është sasia e gotes(ml): ");
-			SasiaEGotave = S.nextInt();
-
-//		Proccess
-			NumriISHisheve = 1 + (NumriIMiqve / (SasiaEShisheve / SasiaEGotave));
-
-//		Out
-		System.out.println("Numir i Shisheve: " + NumriISHisheve);
-		}
-	}
-
+//      Output
+            System.out.println("Numri i shishave që duhet të blini është: " + formula + "\n");
+        }
+    }
+}

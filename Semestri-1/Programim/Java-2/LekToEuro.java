@@ -1,18 +1,23 @@
+package Java2;
+
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class LekToEuro {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Scanner s = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("0.00");
+        Scanner s = new Scanner(System.in);
 
-		double lek;
-		double vlera_e_lek = 118;
+        double vlera_e_lek = 117.80;
 
-		System.out.print("Shkruaj Lek: ");
-		lek = s.nextInt();
+        while (true) {
+            System.out.print("Shkruaj Lek: ");
+            int lek = s.nextInt();
 
-		double result = lek / vlera_e_lek;
+            double result = lek / vlera_e_lek;
 
-		System.out.println(result + " Euro");
-	}
+            System.out.println(lek + " Lek janë " + df.format(result) + "€ Euro \n");
+        }
+    }
 }
