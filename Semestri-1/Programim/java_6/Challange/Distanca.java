@@ -23,12 +23,12 @@ public class Distanca {
         System.out.println();
 
         int distancaAjrore = (int) sqrt(pow(abs(x2 - x1), 2) + pow(abs(y2 - y1), 2)); // √ |x2-x1|²+|y2-y1|²
-        int distancaNjerzore = (int) sqrt(abs(x2 - x1) + abs(y2 - y1)); // √ |x2-x1|+|y2-y1|
+        int distancaNjerzore = abs(x2 - x1) + abs(y2 - y1); // |x2-x1|+|y2-y1|
 
         /*  pa perdorur Math.pow() dhe Math.abs()
          * int xy1 = (x1 - y1 < 0) ? (x1 - y1) * -1 : x1 - y1;
          * int xy2 = (x2 - y2 < 0) ? (x2 - y2) * -1 : x2 - y2;
-         * int distancaAjrore1 = (int) (sqrt((xy1 * xy1) + (xy2 * xy2)));
+         * int distancaAjrore1 = ((xy1 * xy1) + (xy2 * xy2));
          *
          * System.out.println("Distanca ajrore: " + distancaAjrore1);
          **/
