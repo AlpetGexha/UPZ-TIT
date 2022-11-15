@@ -17,21 +17,24 @@ public class Kalkulatori {
 
         int result = 0;
 
-        if (operator.equals("+")) {
+        if (operator == "+")
             result = a + b;
-        }
 
-        else if (operator.equals("-")) {
+
+        else if (operator == "-")
             result = a - b;
-        }
 
-        else if (operator.equals("*")) {
+
+        else if (operator == "*")
             result = a * b;
-        }
 
-        else if (operator.equals("/")) {
+
+        else if (operator == "/")
             result = a / b;
-        }
+
+        else
+            System.out.println("Operatori i dhene nuk eshte valid");
+
 
         /*
         *  int result = switch (operator) {
