@@ -13,23 +13,23 @@ public class Kalkulatori {
         int b = s.nextInt();
 
         System.out.print("Jep nje operator (+, -, *, /): ");
-        String operator = s.next();
+        char operator = s.next().charAt(0);
 
         int result = 0;
 
-        if (operator == "+")
+        if (operator == '+')
             result = a + b;
 
 
-        else if (operator == "-")
+        else if (operator == '-')
             result = a - b;
 
 
-        else if (operator == "*")
+        else if (operator == '*')
             result = a * b;
 
 
-        else if (operator == "/")
+        else if (operator == '/')
             result = a / b;
 
         else
