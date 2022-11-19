@@ -13,6 +13,7 @@ public class ConvertSeconds {
             int totaliSekonda = s.nextInt();
 
 //            Process
+// testin das
             int ore = totaliSekonda / 3600;
             int minuta = (totaliSekonda % 3600) / 60;
             int sekonda = totaliSekonda % 60;
