@@ -6,6 +6,8 @@ public class Coordinate3D {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
+	while(true){
+
         System.out.print("Jep vleren e x: ");
         int x = s.nextInt();
 
@@ -51,6 +53,6 @@ public class Coordinate3D {
 
         System.out.println();
 
-    }
-
+		}
+	}
 }
