@@ -1,4 +1,4 @@
-package java8;
+package Kollofjumi1;
 
 public class Detyra11 {
     public static void main(String[] args) {

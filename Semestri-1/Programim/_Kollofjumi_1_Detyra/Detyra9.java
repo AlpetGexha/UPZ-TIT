@@ -1,4 +1,4 @@
-package java8;
+package Kollofjumi1;
 /**
  * Kthe formain e oreve nga 24 ne 12
  */
@@ -20,7 +20,7 @@ public class Detyra9 {
                 System.out.println("Ka je nis me kto shirfra der 59 e kena");
             } else {
 
-                if (ora >= 12) {
+                if (ora > 12) {
                     ora -= 12;
                 }
                 System.out.println("Ora eshte: " + ora + ":" + minuta);

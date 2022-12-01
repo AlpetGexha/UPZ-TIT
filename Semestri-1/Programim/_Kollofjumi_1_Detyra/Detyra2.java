@@ -1,4 +1,4 @@
-package java8;
+package Kollofjumi1;
 
 import java.util.Scanner;
 
