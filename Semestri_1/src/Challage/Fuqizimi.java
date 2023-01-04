@@ -1,6 +1,6 @@
 package Challage;
 
-public class test {
+public class Fuqizimi {
     public static void main(String[] args) {
 
         System.out.println(pow(2, 10));
