@@ -1,21 +1,15 @@
 package Java_14;
 
-public class Detyra {
+public class Formula {
 
     public static void main(String[] args) {
-        int n = 5;
-        int a = 10;
+        int n = 7;
+        int a = 4;
 
-        int sum = shuma(a);
-        System.out.println(n);
+        double formula1 = prodhimi(shuma(a));
+        double formula2 = faktoriel(n);
 
-        int prod = faktoriel(n);
-        System.out.println(prod);
-
-        double prod2 = prodhimi(sum);
-        System.out.println(prod2);
-
-        double result = (double)prodhimi(shuma(a)) / (double) faktoriel(n);
+        double result = formula1 / formula2;
 
         System.out.println(result);
     }
