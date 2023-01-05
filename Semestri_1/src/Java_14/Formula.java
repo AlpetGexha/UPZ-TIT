@@ -19,6 +19,7 @@ public class Formula {
         for (int i = 1; i <= n; i++) {
             shuma += i;
         }
+
         return shuma;
     }
 
@@ -27,6 +28,7 @@ public class Formula {
         for (int i = 1; i <= n; i++) {
             prodhimi *= i;
         }
+
         return prodhimi;
     }
 
