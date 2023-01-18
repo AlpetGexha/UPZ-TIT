@@ -11,7 +11,8 @@ public class detyra_4_ndarja_indiciduale {
             tmp /= 10;
         }
 
-        int[] vargu = new int[count];
+        int vargu[] = new int[count];
+
         for (int i = 0; i < vargu.length; i++) {
             vargu[i] = n % 10;
             n /= 10;
