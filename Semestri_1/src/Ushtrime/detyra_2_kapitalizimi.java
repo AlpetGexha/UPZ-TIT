@@ -22,6 +22,7 @@ public class detyra_2_kapitalizimi {
                 } else {
                     res += str[i].charAt(j); // shto karakterin tjera
                 }
+
             }
         }
 
