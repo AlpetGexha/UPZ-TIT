@@ -1,6 +1,6 @@
 package Ushtrime;
 
-public class detyra_4_prilii {
+public class detyra_4_trekenshi_prilii {
     public static void main(String[] args) {
         int n = 500;
 
