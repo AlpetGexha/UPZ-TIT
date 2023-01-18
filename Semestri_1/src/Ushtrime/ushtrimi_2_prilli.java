@@ -26,9 +26,6 @@ public class ushtrimi_2_prilli {
                 return false;
         }
 
-//        double z = Math.sqrt(n);
-//        double round = Math.round(z);
-//
 //        while (round <= 1) {
 //            if (n % round != 0) {
 //                return false;
