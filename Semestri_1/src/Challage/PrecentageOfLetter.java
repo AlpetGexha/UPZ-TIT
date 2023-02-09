@@ -14,6 +14,5 @@ public class PrecentageOfLetter {
 
         int res = (count * 100) / total;
         System.out.println(res);
-
     }
 }
