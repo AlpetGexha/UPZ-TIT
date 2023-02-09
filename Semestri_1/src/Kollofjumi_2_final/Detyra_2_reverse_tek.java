@@ -18,7 +18,6 @@ public class Detyra_2_reverse_tek {
             } else {
                 res += word[i] + " ";
             }
-
         }
 
         return res;
