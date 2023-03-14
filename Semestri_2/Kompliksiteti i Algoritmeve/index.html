@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"
+        integrity="sha512-v3ygConQmvH0QehvQa6gSvTE2VdBZ6wkLOlmK7Mcy2mZ0ZF9saNbbk19QeaoTHdWIEiTlWmrwAL4hS8ElnGFbA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.js"
+        integrity="sha512-vCUbejtS+HcWYtDHRF2T5B0BKwVG/CLeuew5uT2AiX4SJ2Wff52+kfgONvtdATqkqQMC9Ye5K+Td0OTaz+P7cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <div class="container" x-data="chartData()">
+        <div>
+            <label for="input-n">Input size (n):</label>
+            <input type="number" id="input-n" x-model="n" :value="10" />
+        </div>
+        <div>
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        function chartData() {
+            return {
+                // gele element from id
+                n: document.getElementById('input-n').value,
+                type: 'bar',
+                getChartData() {
+                    const labels = ['Logaritmik', 'Linar', 'Linar Logaritmik', 'Kuadrik', 'Kubik', 'Exponencial'];
+                    const data = [];
+
+                    data.push(Math.log(this.n));
+                    data.push(this.n);
+                    data.push(this.n * Math.log(this.n));
+                    data.push(this.n ** 2);
+                    data.push(this.n ** 3);
+                    data.push(2 ** this.n);
+
+                    return {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Time Complexity',
+                            data: data,
+                            borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    };
+                }
+            };
+        }
+
+        const chart = new Chart(document.getElementById('chart'), {
+            type: 'bar',
+            data: chartData().getChartData(),
+            options: {
+                scales: {
+                    y: {
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            }
+        });
+
+        const inputN = document.getElementById('input-n');
+        inputN.addEventListener('input', () => {
+            chart.data = chartData().getChartData();
+            chart.update();
+        });
+    </script>
+</body>
+
+</html>
