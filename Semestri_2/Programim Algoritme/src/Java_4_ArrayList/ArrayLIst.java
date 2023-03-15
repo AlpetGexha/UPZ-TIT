@@ -5,7 +5,7 @@ public class ArrayLIst {
     int[] array;
     int size, maxSize;
 
-    public void ArrayLIst(int maxSize) {
+    public ArrayLIst(int maxSize) {
         maxSize = maxSize;
         size = 0;
         array = new int[maxSize];
@@ -41,8 +41,5 @@ public class ArrayLIst {
             System.out.println(array[i]);
         }
     }
-
-
-
 
 }
