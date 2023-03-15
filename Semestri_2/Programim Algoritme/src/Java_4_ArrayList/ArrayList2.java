@@ -52,7 +52,7 @@ public class ArrayList2 {
         System.out.println("Size: " + arr.size);
         System.out.println("MAX Size: " + arr.maxSize);
 
-        arr.add(42,1);
+        arr.add(42, 1);
         arr.display();
 
         System.out.println("Remove All:");
@@ -104,6 +104,10 @@ public class ArrayList2 {
         remove(value);
     }
 
+    public void shift() {
+        remove(0);
+    }
+
     public int find(int value) {
         for (int i = 0; i < size; i++) {
             if (array[i] == value) {
@@ -115,13 +119,10 @@ public class ArrayList2 {
 
     private void inereaseSize() {
         if (size >= maxSize) {
-//            array = copyArray(array, maxSize * 2);
-            int[] temp = new int[maxSize * 2];
-            if (size >= 0) System.arraycopy(array, 0, temp, 0, size);
+//          if (size >= 0) {
+            int[] temp = copyArray(array, maxSize * 2);
             array = temp;
-            maxSize *= 2;
         }
-
     }
 
     private void decreaseSize() {
@@ -130,6 +131,7 @@ public class ArrayList2 {
             if (size >= 0) System.arraycopy(array, 0, temp, 0, size);
             array = temp;
             maxSize /= 2;
+
         }
     }
 
@@ -144,10 +146,8 @@ public class ArrayList2 {
     public int[] copyArray(int[] arr, int maxSize) {
 //        checkIfIsEmpty();
         int[] temp = new int[maxSize];
-        if (size >= 0){
-            for (int i = 0; i < size; i++) {
-                temp[i] = arr[i];
-            }
+        if (size >= 0) {
+            System.arraycopy(arr, 0, temp, 0, size);
         }
         return temp;
     }
@@ -155,7 +155,6 @@ public class ArrayList2 {
     public void checkIfIsEmpty() {
         if (size == 0) {
             System.out.println("Array është bosh");
-            return;
         }
     }
 
