@@ -1,67 +1,48 @@
-package Java_4_ArrayList;
 
+// Made on Home
+
+package Java_4_ArrayList;
 
 public class ArrayList2 {
 
-    final int DEFAULT_SIZE = 8;
-    int[] array;
-    int size, maxSize;
+
+    /**
+     * Konstanta që tregon madhësinë fillestare të array
+     */
+    private final int DEFAULT_SIZE = 8;
+
+    /**
+     * Array ku mbajmë elementet e ArrayList
+     */
+    private int[] array;
+
+    /**
+     * Madhësia aktuale e array
+     */
+    private int size;
+
+    /**
+     * Madhësia maksimale e array
+     */
+    private int maxSize;
 
 
+    /**
+     * Konstruktori i ArrayList, inicializon madhësinë maksimale me DEFAULT_SIZE,
+     * madhësinë aktuale me 0 dhe krijon array-in me DEFAULT_SIZE elemente.
+     */
     public ArrayList2() {
         maxSize = DEFAULT_SIZE;
         size = 0;
         array = new int[maxSize];
     }
 
-    public static void main(String[] args) {
-        ArrayList2 arr = new ArrayList2();
-        System.out.println("Fillimi");
-        System.out.print("Size: ");
-        arr.size();
 
-        System.out.print("MAX Size: ");
-        arr.maxSize();
-
-        arr.add(1);
-        arr.add(2);
-        arr.add(3);
-        arr.add(4);
-        arr.add(5);
-        arr.add(6);
-        arr.add(7);
-        arr.add(8);
-        arr.add(9);
-        arr.add(10);
-        arr.add(11);
-
-        System.out.println("Shtimi: ");
-        System.out.println("Size: " + arr.size);
-        System.out.println("MAX Size: " + arr.maxSize);
-
-        arr.remove(1);
-        arr.remove(2);
-        arr.remove(3);
-        arr.remove(4);
-        arr.remove(5);
-        arr.remove(6);
-        arr.remove(7);
-        arr.remove(8);
-
-        System.out.println("Remove: ");
-        System.out.println("Size: " + arr.size);
-        System.out.println("MAX Size: " + arr.maxSize);
-
-        arr.add(42, 1);
-        arr.display();
-
-        System.out.println("Remove All:");
-        arr.removeAll();
-        System.out.println("Size: " + arr.size);
-        System.out.println("MAX Size: " + arr.maxSize);
-
-    }
-
+    /**
+     * Shton një element në fund të array.
+     *
+     * @param value vlera që do të shtohet në array
+     */
     public void add(int value) {
         inereaseSize();
         if (size < maxSize) {
@@ -70,6 +51,12 @@ public class ArrayList2 {
         }
     }
 
+    /**
+     * Shton një element në një pozitë të caktuar të array.
+     *
+     * @param value   vlera që do të shtohet në array
+     * @param onIndex pozita në të cilën do të shtohet vlera
+     */
     public void add(int value, int onIndex) {
         inereaseSize();
         if (size < maxSize) {
@@ -81,6 +68,11 @@ public class ArrayList2 {
         }
     }
 
+    /**
+     * Fshin një element nga array.
+     *
+     * @param value vlera që do të fshihet nga array
+     */
     public void remove(int value) {
         checkIfIsEmpty();
         decreaseSize();
@@ -94,19 +86,24 @@ public class ArrayList2 {
         }
     }
 
+    /**
+     * Fshirja e të gjithë elementeve në array
+     */
+
     public void removeAll() {
         size = 0;
         maxSize = DEFAULT_SIZE;
         array = new int[maxSize];
     }
 
-    public void unset(int value) {
-        remove(value);
-    }
 
+    /**
+     * Fshirja e elementit te parë
+     */
     public void shift() {
         remove(0);
     }
+
 
     public int find(int value) {
         for (int i = 0; i < size; i++) {
@@ -117,6 +114,11 @@ public class ArrayList2 {
         return -1;
     }
 
+    /**
+     * E rrit madhësinë e array.
+     *
+     * @return new array me 2 herë madhësinë me te madhe se array i vjetër
+     */
     private void inereaseSize() {
         if (size >= maxSize) {
 //          if (size >= 0) {
@@ -125,6 +127,11 @@ public class ArrayList2 {
         }
     }
 
+    /**
+     * E zvogëlon madhësinë e array.
+     *
+     * @return new array me 2 herë madhësinë me te vogël se e vjetra
+     */
     private void decreaseSize() {
         if (size == maxSize / 2) {
             int[] temp = new int[maxSize / 2];
@@ -135,12 +142,12 @@ public class ArrayList2 {
         }
     }
 
-    public void size() {
-        System.out.println(size);
+    public int getSize() {
+        return size;
     }
 
-    public void maxSize() {
-        System.out.println(maxSize);
+    public int getMaxSize() {
+        return maxSize;
     }
 
     public int[] copyArray(int[] arr, int maxSize) {
