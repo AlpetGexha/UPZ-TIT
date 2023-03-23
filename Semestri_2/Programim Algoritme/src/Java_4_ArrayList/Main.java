@@ -5,10 +5,11 @@ public class Main {
         ArrayList2 arr = new ArrayList2();
         System.out.println("Fillimi");
         System.out.print("Size: ");
-        arr.size();
+
+        System.out.println(arr.getSize());
 
         System.out.print("MAX Size: ");
-        arr.maxSize();
+        System.out.println(arr.getMaxSize());
 
         arr.add(1);
         arr.add(2);
@@ -23,8 +24,8 @@ public class Main {
         arr.add(11);
 
         System.out.println("Shtimi: ");
-        System.out.println("Size: " + arr.size);
-        System.out.println("MAX Size: " + arr.maxSize);
+        System.out.println("Size: " + arr.getSize());
+        System.out.println("MAX Size: " + arr.getMaxSize());
 
         arr.remove(1);
         arr.remove(2);
@@ -36,17 +37,15 @@ public class Main {
         arr.remove(8);
 
         System.out.println("Remove: ");
-        System.out.println("Size: " + arr.size);
-        System.out.println("MAX Size: " + arr.maxSize);
+        System.out.println("Size: " + arr.getSize());
+        System.out.println("MAX Size: " + arr.getMaxSize());
 
         arr.add(42, 1);
         arr.display();
 
         System.out.println("Remove All:");
         arr.removeAll();
-        System.out.println("Size: " + arr.size);
-        System.out.println("MAX Size: " + arr.maxSize);
-
+        System.out.println("Size: " + arr.getSize());
+        System.out.println("MAX Size: " + arr.getMaxSize());
     }
-
 }
