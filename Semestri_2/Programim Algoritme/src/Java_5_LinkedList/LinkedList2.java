@@ -1,18 +1,37 @@
+// Made in home
 package Java_5_LinkedList;
 
-public class LinkedList2 {
 
-    Node head, tail;
-    private int size;
+/**
+ * Presantimi i listes se lidhur (Single Linked List)
+ */
+public class LinkedList2 {
+    private Node head; // referenca e pare e listes
+    private Node tail; // referenca e fundit e listes
+    private int size; // numri i elementeve te listes
 
     public LinkedList2() {
+        // ne fillim lista e lidhur eshte e zbrazte
         head = tail = null;
         size = 0;
     }
 
-    public void addFirst(Object element) {
-        Node n = new Node(element);
+    public int getSize() {
+        return size;
+    }
 
+    /**
+     * Shtimi i nje elementi ne fillim te listes
+     *
+     * @param element - elementi qe do te shtohet
+     */
+    public void addFirst(Object element) {
+
+        // Kompleksiteti: O(1) - konstant
+
+        Node n = new Node(element); // krijimi i nje nyjeje te re
+
+        // kontrollo nese lista eshte e zbrazte
         if (head == null) {
             head = tail = n;
         } else {
@@ -22,7 +41,14 @@ public class LinkedList2 {
         size++;
     }
 
+    /**
+     * Shtimi i nje elementi ne fund te listes
+     *
+     * @param element - elementi qe do te shtohet
+     */
     public void addLast(Object element) {
+        //kompleksiteti: O(1) - konstant
+
         Node n = new Node(element);
 
         if (head == null) {
@@ -34,24 +60,36 @@ public class LinkedList2 {
         size++;
     }
 
+    /**
+     * Shtimi i nje elementi
+     */
     public void add(Object element) {
         addLast(element);
     }
 
+    /**
+     * Shtimi i nje elementi ne poziten e caktuar
+     *
+     * @param element - elementi qe do te shtohet
+     * @param index   - pozita ku do te shtohet elementi
+     */
     public void addAt(Object element, int index) {
+        //kompleksiteti: best case: O(n) - linar
         Node n = new Node(element);
 
-        if (index < 0 || index > size) {
-            return;
-        }
+        checkIndex(index);
 
+//        shtimi ne fillim nese nuk ka elemente
         if (index == 0) {
             addFirst(element);
-        } else if (index == size) {
+        }
+//        shtimi ne fund nese indexi eshte i barabarte me size
+        else if (index == size) {
             addLast(element);
         } else {
             Node tmp = head;
 
+//          Kerko deri tek pozita e caktuar
             for (int i = 0; i < index - 1; i++) {
                 tmp = tmp.next;
             }
@@ -63,11 +101,17 @@ public class LinkedList2 {
 
     }
 
-    public Object get(int index) {
+    /**
+     * Leximi i elementit ne poziten e caktuar
+     *
+     * @param index - pozita ku do te lexohet elementi
+     * @return elementi ne poziten e caktuar
+     */
 
-        if (index < 0 || index > size) {
-            return null;
-        }
+    public Object get(int index) {
+        //kompleksiteti: best case: O(n) - linar
+        checkIndex(index);
+
         Node tmp = head;
         for (int i = 0; i < index; i++) {
             tmp = tmp.next;
@@ -76,15 +120,43 @@ public class LinkedList2 {
         return tmp.data;
     }
 
-    public void removeIndexOf(int index) {
+    /**
+     * Ndryshimi i elementit ne poziten e caktuar
+     *
+     * @param element - elementi qe do te shtohet
+     * @param index   - pozita ku do te ndryshohet elementi
+     */
 
-        if (index < 0 || index > size) {
-            return;
+    public void set(Object element, int index) {
+        //kompleksiteti: best case: O(n) - linar
+        checkIndex(index);
+
+        Node tmp = head;
+
+        for (int i = 0; i < index; i++) {
+            tmp = tmp.next;
         }
 
+        tmp.data = element;
+    }
+
+    private void checkIndex(int index) {
+//       nuk mund te jete index me i vogel se 0 dhe me i madh se size
+
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+        }
+    }
+
+    public void removeIndexOf(int index) {
+        checkIndex(index);
+
+//      nese lista nuk ka elemente
         if (index == 0) {
             head = head.next;
-        } else if (index == size) {
+        }
+//      nese indeksi eshte i fundit
+        else if (index == size) {
             Node tmp = head;
             for (int i = 0; i < index - 1; i++) {
                 tmp = tmp.next;
@@ -101,6 +173,11 @@ public class LinkedList2 {
         size--;
     }
 
+    /**
+     * Heqja e elemetin ne list
+     *
+     * @param element - vlera qe do te hiqet
+     */
     public void remove(Object element) {
         Node tmp = head;
         for (int i = 0; i < size; i++) {
@@ -112,17 +189,24 @@ public class LinkedList2 {
         }
     }
 
-    public void removeAll(Object element) {
-        Node tmp = head;
-        for (int i = 0; i < size; i++) {
-            if (tmp.data.equals(element)) {
-                removeIndexOf(i);
-            }
-            tmp = tmp.next;
-        }
+    /**
+     * Heqja e te gjithe elementeve në liste
+     *
+     */
+    public void removeAll() {
+        head = tail = null;
+        size = 0;
     }
 
+    /**
+     * Gjetja e elementit ne mesit te listes
+     *
+     * @return elementi ne mes te listes
+     * */
     public void getMiddle() {
+//        i marrim 2 referenca te hederit
+//        Njeri i ben 1 hap dhe tjetri 2 hapa
+
         Node slow = head;
         Node fast = head;
 
