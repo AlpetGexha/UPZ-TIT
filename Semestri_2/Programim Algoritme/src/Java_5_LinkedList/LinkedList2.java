@@ -102,6 +102,52 @@ public class LinkedList2 {
     }
 
     /**
+     * Gjetja e indexit te nje elementi
+     *
+     * @param value - elementi qe do te kerkohet
+     * @return indexi i elementit
+     */
+
+    public int find(Object value) {
+        Node tmp = head;
+        int index = 0;
+
+        while (tmp != null) {
+            if (tmp.data.equals(value)) {
+                return index;
+            }
+
+            tmp = tmp.next;
+            index++;
+        }
+
+        return -1;
+    }
+
+    /**
+     * Gjetja e nodit ne poziten e caktuar
+     */
+    public Node findNode(Node head, int index) {
+        Node tmp = head;
+        for (int i = 0; i < index - 1; i++) {
+            tmp = tmp.next;
+        }
+        return tmp;
+    }
+
+    public Node findNode(Node head, Object value) {
+        Node tmp = head;
+        while (tmp != null) {
+            if (tmp.data.equals(value)) {
+                return tmp;
+            }
+            tmp = tmp.next;
+        }
+        return null;
+    }
+
+
+    /**
      * Leximi i elementit ne poziten e caktuar
      *
      * @param index - pozita ku do te lexohet elementi
@@ -174,35 +220,18 @@ public class LinkedList2 {
     }
 
     /**
-     * Heqja e elemetin ne list
-     *
-     * @param element - vlera qe do te hiqet
-     */
-    public void remove(Object element) {
-        Node tmp = head;
-        for (int i = 0; i < size; i++) {
-            if (tmp.data.equals(element)) {
-                removeIndexOf(i);
-                return;
-            }
-            tmp = tmp.next;
-        }
-    }
-
-    /**
      * Heqja e te gjithe elementeve në liste
-     *
      */
     public void removeAll() {
         head = tail = null;
-        size = 0;
+        size = 0;       
     }
 
     /**
      * Gjetja e elementit ne mesit te listes
      *
      * @return elementi ne mes te listes
-     * */
+     */
     public void getMiddle() {
 //        i marrim 2 referenca te hederit
 //        Njeri i ben 1 hap dhe tjetri 2 hapa
