@@ -31,7 +31,7 @@ public class App {
         l.addLast(10);
         l.addFirst(12);
         l.addAt(200, 3);
-        l.remove(1);
+//        l.remove(1);
 
 //        l.deleteIndexOf(2);
 //        l.deleteIndexOf(1);
