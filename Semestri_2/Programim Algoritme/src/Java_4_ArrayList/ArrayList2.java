@@ -1,4 +1,3 @@
-
 // Made on Home
 
 package Java_4_ArrayList;
@@ -61,13 +60,17 @@ public class ArrayList2 {
      */
     public void add(int value, int onIndex) {
         inereaseSize();
-        if (size < maxSize) {
-            for (int i = size; i > onIndex; i--) {
-                array[i] = array[i - 1];
-            }
-            array[onIndex] = value;
-            size++;
+//        check index
+        if (onIndex < 0 || onIndex > size) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
         }
+
+        for (int i = size; i > onIndex; i--) {
+            array[i] = array[i - 1];
+        }
+        array[onIndex] = value;
+        size++;
+
     }
 
     /**
@@ -87,6 +90,7 @@ public class ArrayList2 {
             size--;
         }
     }
+
 
     /**
      * Fshirja e të gjithë elementeve në array
@@ -123,7 +127,8 @@ public class ArrayList2 {
      */
     private void inereaseSize() {
         if (size >= maxSize) {
-            array = Arrays.copyOf(array, maxSize * 2);
+            maxSize *= 2;
+            array = Arrays.copyOf(array, maxSize);
         }
     }
 
@@ -137,6 +142,15 @@ public class ArrayList2 {
             array = Arrays.copyOf(array, maxSize / 2);
             maxSize /= 2;
         }
+    }
+
+    public int get(int index) {
+//        checkIfIsEmpty();
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+
+        return array[index];
     }
 
     public int getSize() {
@@ -159,7 +173,6 @@ public class ArrayList2 {
     public void checkIfIsEmpty() {
         if (size == 0) {
             System.out.println("Array është bosh");
-            return;
         }
     }
 
