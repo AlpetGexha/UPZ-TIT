@@ -39,6 +39,10 @@ public class test {
     }
 
     public static void main(String[] args) {
+
+
+        // [1 ,2 ,3 123,324,534, 654,765, 867,3999 ,654654 ] // n
+
         test pizza = new test("Pizza: ");
 
         pizza.add("Mushroom")
