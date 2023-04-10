@@ -3,6 +3,8 @@
 
 package Java_4_ArrayList;
 
+import java.util.Arrays;
+
 public class ArrayList2 {
 
 
@@ -121,9 +123,7 @@ public class ArrayList2 {
      */
     private void inereaseSize() {
         if (size >= maxSize) {
-//          if (size >= 0) {
-            int[] temp = copyArray(array, maxSize * 2);
-            array = temp;
+            array = Arrays.copyOf(array, maxSize * 2);
         }
     }
 
@@ -134,11 +134,8 @@ public class ArrayList2 {
      */
     private void decreaseSize() {
         if (size == maxSize / 2) {
-            int[] temp = new int[maxSize / 2];
-            if (size >= 0) System.arraycopy(array, 0, temp, 0, size);
-            array = temp;
+            array = Arrays.copyOf(array, maxSize / 2);
             maxSize /= 2;
-
         }
     }
 
@@ -162,6 +159,7 @@ public class ArrayList2 {
     public void checkIfIsEmpty() {
         if (size == 0) {
             System.out.println("Array është bosh");
+            return;
         }
     }
 
