@@ -224,6 +224,9 @@ public class ArrayList {
 
 Funskionet:
 
+Add: fori ja nis nga **fundi** me **-**
+Remove: fori ja nis nga **fillimi** me **+**
+
 - add(int Index)
   - Nese vargu eshte i mbushur rrite per 2 fish
   - Shto elemetin ne fund te array dhe rrit size per 1
@@ -340,7 +343,7 @@ Funksioni: `addFirst()`
 ```java
  public void addFirst(int value) {
 
-    if (maxSize == size) 
+    if (maxSize == size)
         increaseArray();
 
     for (int i = size; i > 0; i--)
@@ -350,8 +353,6 @@ Funksioni: `addFirst()`
     size++;
 }
 ```
-
-
 
 </details>
 <br />
