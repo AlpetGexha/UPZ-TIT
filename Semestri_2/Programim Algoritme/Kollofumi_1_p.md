@@ -132,6 +132,7 @@ Funksioni:
 ```java
 public static int binarySearch(int arr[], int find){
 //  worst case: O(log2n) - logaritmik, best case: O(1) ose O(c) - konstant
+    // Arrays.sort(arr);
 
     int start = 0;
     int end = arr.length - 1;
@@ -150,7 +151,31 @@ public static int binarySearch(int arr[], int find){
     }
 
 }
+```
 
+`Binary Serach Recursion`
+
+```java
+public static void binaryRecursion(int arr[], int value, int low, int hight){
+    Arrays.sort(arr);
+
+    int mid = (low + hight) / 2;
+
+    if(hight < low){
+        System.out.println("Not ka vlera");
+        return;
+    }
+
+    if (value == arr[mid])
+        System.out.println(mid);
+
+    else if (value < arr[mid])
+        binaryRecursion(arr, value, mid + 1, hight);
+
+    else
+        binaryRecursion(arr, value, low, mid - 1);
+
+}
 ```
 
 </details>
@@ -296,7 +321,7 @@ private void decreaseSize() {
     }
 }
 ```
-    
+
 ![Delete-element-from-an-array-in-C](https://user-images.githubusercontent.com/50520333/230817060-725967f8-d6e2-4c1f-bedc-3f508eae20bb.png)
 
 Funksioni `display()`
@@ -309,6 +334,24 @@ public void display() {
     System.out.println();
 }
 ```
+
+Funksioni: `addFirst()`
+
+```java
+ public void addFirst(int value) {
+
+    if (maxSize == size) 
+        increaseArray();
+
+    for (int i = size; i > 0; i--)
+        v[i] = v[i - 1];
+
+    v[0] = value;
+    size++;
+}
+```
+
+
 
 </details>
 <br />
