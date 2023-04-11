@@ -470,3 +470,8 @@ public class LinkedList {
 | Delete (në fillim)  | O(n)     | O(n)      | O(1)       |
 | Delete (ne mes)     | O(n)     | O(n)      | O(n)       |
 | Delete (në fund)    | O(1)     | O(1)      | O(1)       |
+    
+    
+![Binary](https://user-images.githubusercontent.com/50520333/231023547-7d7fe899-4d93-46f1-a2a9-e3dc23981da2.png)
+![linked](https://user-images.githubusercontent.com/50520333/231023549-c37c947b-3dcf-4af4-94b9-52b4821815e2.png)
+
