@@ -132,6 +132,7 @@ Funksioni:
 ```java
 public static int binarySearch(int arr[], int find){
 //  worst case: O(log2n) - logaritmik, best case: O(1) ose O(c) - konstant
+    // Arrays.sort(arr);
 
     int start = 0;
     int end = arr.length - 1;
@@ -150,7 +151,31 @@ public static int binarySearch(int arr[], int find){
     }
 
 }
+```
 
+`Binary Serach Recursion`
+
+```java
+public static void binaryRecursion(int arr[], int value, int low, int hight){
+    Arrays.sort(arr);
+
+    int mid = (low + hight) / 2;
+
+    if(hight < low){
+        System.out.println("Not ka vlera");
+        return;
+    }
+
+    if (value == arr[mid])
+        System.out.println(mid);
+
+    else if (value < arr[mid])
+        binaryRecursion(arr, value, mid + 1, hight);
+
+    else
+        binaryRecursion(arr, value, low, mid - 1);
+
+}
 ```
 
 </details>
@@ -198,6 +223,9 @@ public class ArrayList {
 ```
 
 Funskionet:
+
+Add: fori ja nis nga **fundi** me **-**
+Remove: fori ja nis nga **fillimi** me **+**
 
 - add(int Index)
   - Nese vargu eshte i mbushur rrite per 2 fish
@@ -296,7 +324,7 @@ private void decreaseSize() {
     }
 }
 ```
-    
+
 ![Delete-element-from-an-array-in-C](https://user-images.githubusercontent.com/50520333/230817060-725967f8-d6e2-4c1f-bedc-3f508eae20bb.png)
 
 Funksioni `display()`
@@ -307,6 +335,22 @@ public void display() {
         System.out.print(array[i] + " ");
     }
     System.out.println();
+}
+```
+
+Funksioni: `addFirst()`
+
+```java
+ public void addFirst(int value) {
+
+    if (maxSize == size)
+        increaseArray();
+
+    for (int i = size; i > 0; i--)
+        v[i] = v[i - 1];
+
+    v[0] = value;
+    size++;
 }
 ```
 
@@ -426,3 +470,8 @@ public class LinkedList {
 | Delete (në fillim)  | O(n)     | O(n)      | O(1)       |
 | Delete (ne mes)     | O(n)     | O(n)      | O(n)       |
 | Delete (në fund)    | O(1)     | O(1)      | O(1)       |
+    
+    
+![Binary](https://user-images.githubusercontent.com/50520333/231023547-7d7fe899-4d93-46f1-a2a9-e3dc23981da2.png)
+![linked](https://user-images.githubusercontent.com/50520333/231023549-c37c947b-3dcf-4af4-94b9-52b4821815e2.png)
+
