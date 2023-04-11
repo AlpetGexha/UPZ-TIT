@@ -224,7 +224,7 @@ public class LinkedList2 {
      */
     public void removeAll() {
         head = tail = null;
-        size = 0;       
+        size = 0;
     }
 
     /**

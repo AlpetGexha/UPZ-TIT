@@ -1,25 +1,28 @@
 package Kollofjumi_1;
 
+import java.util.Arrays;
+
 public class Serach {
     public static void main(String[] args) {
 
-        int[] v = {23, 123, 1, 432, 5, 36, 756, 342, 4, 23, 4, 654, 65, 34, 856, 432, 42};
-        int find = 34;
+//        Shembujt
+        int[] vargu = {1, 6, 2, 7, 8, 0};
+        int find = 8;
 
-        // kerkimi
-        // cdo pozit\
-        // for (0 < n-1)
-        // char at
-        System.out.println(sequencialSearch(v, find));
+        System.out.println(linarSearch(vargu,find)); // 4
+        selfOrganization(vargu,6); // 1
+//        swap(vargu[0] , vargu[1]);
+
+//        System.out.println();
+//        dd(vargu); // 6,1,2,7,8
+
     }
 
-    public static int sequencialSearch(int[] v, int find) {
-        for (int i = 0; i < v.length; i++) {
-//            if(v[i] == find){
-//                swap v[i] me v[i + 1]
-//            }
-            if (v[i] == find) {
-//                System.out.println("index" + i);
+    //  return Linar
+    public static int linarSearch(int[] arr, int value) {
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == value) {
                 return i;
             }
         }
@@ -27,18 +30,79 @@ public class Serach {
         return -1;
     }
 
-    public static void seqFindSelf(int[] v, int find) {
-        for (int i = 0; i < v.length; i++) {
-            if (v[i] == find) {
-                swap(i, i + 1);
+//    vetorganizim
+//    public static void
+//  Kur e bojm 1 element serach vlera e elementit zhvendoset per 1 ( i bohet swap me i+1)
+
+    public static void selfOrganization(int[] dionesa, int value) {
+        for (int i = 0; i < dionesa.length; i++) {
+            if (dionesa[i] == value) {
+                System.out.print(i);
+                swap(dionesa[i], dionesa[i + 1]);
+                System.out.println();
+                return;
             }
+
         }
+
+        System.out.println("Kerka sje");
     }
 
-  public static void swap(int x, int y){
+    public static void swap(int x, int y) {
         int temp = x;
         x = y;
         y = temp;
-  }
+    }
+
+    public static void dd(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+
+    public static int binarySerach(int arr[], int value){
+        Arrays.sort(arr);
+
+        int low = 0;
+        int hight = arr.length - 1;
+
+        while(low <= hight){
+            int mid = (low + hight) / 2;
+
+            if (value == arr[mid])
+                return mid;
+
+            else if (value < arr[mid])
+                low = mid + 1;
+
+            else
+                hight = mid - 1;
+
+        }
+
+        return -1;
+    }
+
+
+    public static void binaryRecursion(int arr[], int value, int low, int dionesaHeight){
+        Arrays.sort(arr);
+
+        int mid = (low + dionesaHeight) / 2;
+
+        if(dionesaHeight < low){
+            System.out.println("Not ka vlera");
+            return;
+        }
+
+        if (value == arr[mid])
+            System.out.println(mid);
+
+        else if (value < arr[mid])
+            binaryRecursion(arr, value, mid + 1, dionesaHeight);
+
+        else
+            binaryRecursion(arr, value, low, mid - 1);
+
+    }
 
 }
