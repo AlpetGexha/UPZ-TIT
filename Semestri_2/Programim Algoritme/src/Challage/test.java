@@ -50,6 +50,7 @@ public class test {
                 .add("Bacon")
                 .addAt("Onion", 3)
                 .addAt("Olives", 0)
+                .addAt("Olives",2)
                 .tomato()
                 .addAt("Sausage", 6)
                 .patato()
