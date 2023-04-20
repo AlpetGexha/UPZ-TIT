@@ -1,5 +1,5 @@
 # UPZ-TIT
-Detyra dhe Ushtrime për Shkenca Kompjuterike (TIT)
+Shenimet e Shkenca Kompjuterike (TIT)
 
 
 - [Semestri 1](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_1) 
@@ -10,3 +10,4 @@ Detyra dhe Ushtrime për Shkenca Kompjuterike (TIT)
   - [Algoritme Vizual](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_2/Kompliksiteti%20i%20Algoritmeve)
   - [Algoritme 2](https://algorithm-visualizer.org/)
   - [Arduino](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_2/Arduino)
+  - [Protokollet e Internetit](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_2/Protokollet%20e%20Internetit)
