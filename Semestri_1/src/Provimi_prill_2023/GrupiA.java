@@ -62,16 +62,18 @@ public class GrupiA {
 public static boolean isBinak(int num1, int num2){
 
         int count = 0;
+        int nums = 0;
 
         while(num1 > 0){
             if(num1 % 10 == num2 % 10){
                 count++;
             }
+            nums++;
             num1 /= 10;
             num2 /= 10;
         }
 
-        if(num1/2 >= count)
+        if(nums/2 >= count)
             return true;
 
         return false;
