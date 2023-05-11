@@ -17,12 +17,9 @@ Ky kufizim e bën të padezirueshëm për rrjetat e mëdha ose komplekse. RIP gj
 
 **VLSM** - stands for variable length subnet mask and is a concept that is used to divide a network into multiple subnetworks of different lengths
 
-
 ### Skema
 
 ![image](https://github.com/AlpetGexha/UPZ-TIT/assets/50520333/8c73b8ef-ad1e-45c1-a199-cd802dac0236)
-
-
 
 Configurimi per `R0`
 
@@ -38,7 +35,8 @@ R0(config-router)# network <ip> <mask>
 R0(config-router)# no auto-summary
 ```
 
-Dhe ne fund e ruajm configruimin: 
+Dhe ne fund e ruajm configruimin:
+
 ```c
 R0# copy running-config startup-config
 ```
@@ -47,5 +45,8 @@ R0# copy running-config startup-config
 
 - `no auto-summary` - Mos i grubullo subnetat
 
+Testimi **PC1**
 
-
+```
+tracert 192.168.2.2
+```
