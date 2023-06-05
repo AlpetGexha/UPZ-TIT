@@ -1,5 +1,7 @@
 package Java_12_13_Sorting;
 
+import java.util.Arrays;
+
 public class AdvanceSorting {
 
     public static void main(String[] args) {
@@ -49,8 +51,13 @@ public class AdvanceSorting {
         int[] right = new int[n - mid];
 
         // Split the array into two halves
-        System.arraycopy(array, 0, left, 0, left.length); // Copy elements to the left subarray
-        System.arraycopy(array, mid, right, 0, right.length); // Copy elements to the right subarray
+        for (int i = 0; i < mid; i++) {
+            left[i] = array[i]; // Copy the first half of array into left
+        }
+
+        for (int i = 0; i < n - mid; i++) {
+            right[i] = array[mid + i]; // Copy the second half of array into right
+        }
 
         mergeSort(left); // Recursively sort the left subarray
         mergeSort(right); // Recursively sort the right subarray
