@@ -5,6 +5,23 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class ReadLine {
+
+    public static void main(String[] args) {
+        String filePath = "input.txt";
+
+        try {
+            String lastLine = readLastLineOfFile(filePath);
+
+            String res = readLineOfFile(filePath, 2);
+            System.out.println(res);
+
+            System.out.println("Last line of the file: " + lastLine);
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
     public static String readLineOfFile(String filePath, int lineNumber) throws Exception {
         String line = null;
 
@@ -36,24 +53,22 @@ public class ReadLine {
         return line;
     }
 
-    public static String readLastLineOfFile(String filePath) throws Exception {
-        return readLineOfFile(filePath, 0);
-    }
+    public static String readLastLineOfFile(String filePath){
 
-
-    public static void main(String[] args) {
-        String filePath = "input.txt";
-
+        String line = null;
         try {
-            String lastLine = readLastLineOfFile(filePath);
+            BufferedReader reader = new BufferedReader(new FileReader(filePath));
 
-            String res = readLineOfFile(filePath, 1);
-            System.out.println(res);
+            while ((line = reader.readLine()) != null) {
+                if (reader.readLine() == null)
+                    break;
+            }
 
-            System.out.println("Last line of the file: " + lastLine);
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+        } catch (IOException e) {
+            e.getMessage();
         }
+
+        return line;
     }
+
 }

@@ -20,6 +20,11 @@ public class Mesatarja {
             String line = input.readLine();
             while (line != null) {
                 try {
+                    if (line.length() == 0) {
+                        line = input.readLine();
+                        continue;
+                    }
+
                     line = line.replaceAll("\\s+", "");
 
                     String[] data = line.split(",");
