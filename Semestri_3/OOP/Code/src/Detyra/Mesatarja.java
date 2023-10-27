@@ -20,7 +20,7 @@ public class Mesatarja {
             String line = input.readLine();
             while (line != null) {
                 try {
-                    if (line.length() == 0) {
+                    if (line.isEmpty()) {
                         line = input.readLine();
                         continue;
                     }
@@ -46,6 +46,7 @@ public class Mesatarja {
             }
 
             output.close();
+            System.out.printf("Rezultati per %d studente u ruajt ne %s%n", currentLine, outputPath);
         } catch (FileNotFoundException e) {
             System.out.println("Faili nuk u gjet.");
         } catch (IOException e) {
@@ -61,15 +62,17 @@ public class Mesatarja {
         int result = avgOf(kol1, kol2);
 
         output.write(String.format("%s,%s,%d,%d,%d,%d\n",
-                emri, mbiermi, kol1, kol2, result, grade(result)
-        ));
+                emri, mbiermi, kol1, kol2, result, grade(result))
+        );
     }
 
     public static int avgOf(int kol1, int kol2) {
+
         return (kol1 + kol2) / 2;
     }
 
     public static boolean isValidTestScore(int score) {
+
         return score >= 0 && score <= 100;
     }
 
@@ -86,15 +89,12 @@ public class Mesatarja {
     public static void isValidFormat(String[] numbers) throws Exception {
         validateLineFormat(numbers);
 
-        String emri = numbers[0];
-        String mbiermi = numbers[1];
-        int kol1 = Integer.parseInt(numbers[2]);
-        int kol2 = Integer.parseInt(numbers[3]);
+        DataObjectt data = new DataObjectt(numbers);
 
-        validateName(emri, "Emri");
-        validateName(mbiermi, "Mbiemri");
-        validateTestScore(kol1, "Kolofjumi 1");
-        validateTestScore(kol2, "Kolofjumi 2");
+        validateName(data.getName(), "Emri");
+        validateName(data.getSurname(), "Mbiemri");
+        validateTestScore(data.getKol1(), "Kolofjumi 1");
+        validateTestScore(data.getKol2(), "Kolofjumi 2");
     }
 
     private static void validateLineFormat(String[] numbers) throws Exception {
@@ -120,9 +120,5 @@ public class Mesatarja {
         FileWriter fail = new FileWriter(new File(failPath), true);
         fail.write(line + "\n");
         fail.close();
-    }
-
-    public static void validateLine(String line) {
-        line = line.replaceAll("\\s+", "");
     }
 }

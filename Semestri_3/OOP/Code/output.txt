@@ -1,0 +1,3 @@
+Carolyn,Haag,100,97,98,10
+Linus,Torvalds,99,99,99,10
+Micaela,Johnson,8,43,25,5
