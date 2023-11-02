@@ -9,25 +9,24 @@ public class AttributeObject {
     public String value;
 
     public AttributeObject(String attribute) {
-
-        String tmp = "";
+        String tmp = attribute;
         if (attribute.contains("=")) {
             tmp = attribute.split("=")[0].trim();
 
             this.value = attribute.split("=")[1]
                     .replace(";", "")
-                    .replace("\"", "")
+//                    .replace("\"", "")
                     .trim();
         }
 
         if (tmp.contains("static")) {
             this.isStatic = true;
-            tmp = tmp.replace("static", "").trim();
+            tmp = tmp.replace("static", "");
         }
 
         if (tmp.contains("final")) {
             this.isFinal = true;
-            tmp = tmp.replace("final", "").trim();
+            tmp = tmp.replace("final", "");
         }
 
         String[] parts = tmp.split("\\s+");
@@ -52,4 +51,20 @@ public class AttributeObject {
 
         return attribute;
     }
+
+    public String toString() {
+//
+        String value = this.value != null ? " = " + this.value : "";
+        String isStatic = this.isStatic ? " static" : "";
+        String isFinal = this.isFinal ? " final" : "";
+
+        return String.format("%s%s%s %s %s %s",
+                this.accessModifier, isStatic, isFinal, this.dataType, this.variableName, value
+        );
+    }
+
+    public String staticReturn() {
+        return (isStatic) ? "" : "this.";
+    }
+
 }
