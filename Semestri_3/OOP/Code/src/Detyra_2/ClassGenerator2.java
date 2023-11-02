@@ -250,3 +250,7 @@ public class ClassGenerator2 {
         }
     }
 }
+
+// TODO: Deal with static attributes
+// Make a class For Attribute Object
+// ON the list accept only Attribute Objects
