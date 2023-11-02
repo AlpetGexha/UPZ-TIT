@@ -5,5 +5,5 @@ public class Student {
     private String ditelindja;
     String adresa;
     boolean isMarried;
-    public static int nrStudenteve = 0;
+    public int nrStudenteve = 5;
 }

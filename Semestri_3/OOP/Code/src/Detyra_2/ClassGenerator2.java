@@ -216,7 +216,13 @@ public class ClassGenerator2 {
                 String[] parts = attribute.trim().split(" ");
                 String type = parts[1];
                 String name = parts[2].replace(";", "").trim();
-                writer.println("        this." + name + " = " + (type.equals("int") ? "0" : "\"\"") + ";");
+                if (type.equals("int")) {
+                    writer.println("        this." + name + " = 0;");
+                } else if (type.equals("boolean")) {
+                    writer.println("        this." + name + " = false;");
+                } else {
+                    writer.println("        this." + name + " = \"\";");
+                }
             }
             writer.println("}");
         }
