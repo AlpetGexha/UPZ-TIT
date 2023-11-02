@@ -1,5 +1,5 @@
 public class Student {
-    public String emri;
+    public String emri = "Alpet";
     public String mbiemri;
     public int nota;
     private String ditelindja;
