@@ -1,0 +1,7 @@
+public class Student {
+    public String emri;
+    public String mbiemri;
+    public int nota;
+    private String ditelindja;
+    String adresa;
+}
