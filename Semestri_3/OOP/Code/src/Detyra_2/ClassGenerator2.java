@@ -38,6 +38,37 @@ public class ClassGenerator2 {
             generator = new ClassGenerator2();
         }
 
+        public static boolean isValidAttribute(String input) {
+            // Remove any leading or trailing white spaces
+            input = input.trim();
+
+            // Split the input string by spaces
+            String[] parts = input.split("\\s+");
+
+            // Check if there are at least two parts (data type and variable name)
+            if (parts.length >= 2) {
+                // The first part should be a valid access modifier
+                String accessModifier = parts[0];
+                if (isValidAccessModifier(accessModifier)) {
+                    // The second part should be a valid variable name
+                    String variableName = parts[1];
+                    return isValidVariableName(variableName);
+                }
+            }
+
+            return false;
+        }
+
+        private static boolean isValidAccessModifier(String accessModifier) {
+            // Check if the access modifier is one of the valid modifiers
+            return accessModifier.matches("^(public|private|protected|default)$");
+        }
+
+        private static boolean isValidVariableName(String variableName) {
+            // Check if the variable name is a valid Java identifier
+            return variableName.matches("^[a-zA-Z_][a-zA-Z0-9_]*$");
+        }
+
         public void readInputFromFile(String inputFile) {
             try (BufferedReader reader = new BufferedReader(new FileReader(inputFile))) { // try-with-resources
                 StringBuilder classContent = new StringBuilder();
@@ -79,6 +110,7 @@ public class ClassGenerator2 {
             for (String attribute : generator.attributes) {
                 generateSetter(attribute);
             }
+
             return this;
         }
 
@@ -86,6 +118,7 @@ public class ClassGenerator2 {
             for (String attribute : generator.attributes) {
                 generateGetter(attribute);
             }
+
             return this;
         }
 
@@ -104,12 +137,27 @@ public class ClassGenerator2 {
             int attributesEnd = classContentStr.lastIndexOf("}");
             String attributesBlock = classContentStr.substring(attributesStart, attributesEnd).trim();
             String[] attributeLines = attributesBlock.split(";");
+
             for (String attributeLine : attributeLines) {
                 String attribute = attributeLine.trim();
                 if (!attribute.isEmpty()) {
+                    attribute = addAccessModifyIfNotExists(attribute);
                     generator.attributes.add(attribute);
                 }
             }
+        }
+//        if (!attribute.startsWith("public") && !attribute.startsWith("private") && !attribute.startsWith("protected")) {
+//            attribute = "public " + attribute;
+//        }
+
+        private String addAccessModifyIfNotExists(String attribute) {
+            StringBuilder sb = new StringBuilder(attribute);
+
+            if (!attribute.startsWith("public") && !attribute.startsWith("private") && !attribute.startsWith("protected")) {
+                sb.insert(0, "public ");
+            }
+
+            return sb.toString();
         }
 
         private void createPrintWriter() {

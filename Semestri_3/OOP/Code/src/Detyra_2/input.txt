@@ -4,4 +4,6 @@ public class Student {
     public int nota;
     private String ditelindja;
     String adresa;
+    boolean isMarried;
+    public static int nrStudenteve = 0;
 }
