@@ -24,8 +24,9 @@ public class ClassGenerator2 {
                 .readFile(input)
                 .generate()
                 .constructors()
-                .setters()
                 .getters()
+                .setters()
+                .toStrings()
                 .build();
     }
 
@@ -104,6 +105,12 @@ public class ClassGenerator2 {
             for (AttributeObject attribute : generator.attributes) {
                 generateGetter(attribute);
             }
+
+            return this;
+        }
+
+        public Builder toStrings() {
+            generateToString();
 
             return this;
         }
@@ -205,6 +212,18 @@ public class ClassGenerator2 {
             }
             writer.println("}");
         }
+
+        private void generateToString() {
+            writer.println("\n" + "    public String toString() {");
+            writer.println("        return");
+            for (AttributeObject attribute : generator.attributes) {
+                String name = attribute.variableName;
+                writer.println("                \"" + name + ": \" + " + attribute.staticReturn() + name + " +");
+            }
+            writer.println("                \"\";");
+            writer.println("    }");
+        }
+
         private void generateSetter(AttributeObject attribute) {
             writer.println(printSetter(attribute));
         }

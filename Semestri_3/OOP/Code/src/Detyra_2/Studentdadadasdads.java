@@ -84,4 +84,16 @@ public class Studentdadadasdads {
     public void setNrStudenteve(int nrStudenteven) {
         nrStudenteve = nrStudenteven;
     }
+
+    public String toString() {
+        return
+                "emri: " + this.emri +
+                        "mbiemri: " + this.mbiemri +
+                        "nota: " + this.nota +
+                        "ditelindja: " + this.ditelindja +
+                        "adresa: " + this.adresa +
+                        "isMarried: " + this.isMarried +
+                        "nrStudenteve: " + nrStudenteve +
+                        "}";
+    }
 }
