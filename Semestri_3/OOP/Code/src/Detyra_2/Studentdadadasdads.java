@@ -1,14 +1,12 @@
-package Detyra_2;
 
-public class Studentdadadasdads {
-    public static int nrStudenteve;
-    public String emri = "Albana";
-    public String mbiemri;
-    public int nota = 4;
-    public String adresa;
-    public boolean isMarried;
-    private String ditelindja;
-
+ public class Studentdadadasdads {
+    public String emri  = "Albana";
+    public String mbiemri ;
+    public int nota  = 4;
+    private String ditelindja ;
+    public String adresa ;
+    public boolean isMarried ;
+    public static int nrStudenteve ;
     public Studentdadadasdads(String emri, String mbiemri, int nota, String ditelindja, String adresa, boolean isMarried, int nrStudenteven) {
         this.emri = emri;
         this.mbiemri = mbiemri;
@@ -27,73 +25,74 @@ public class Studentdadadasdads {
         this.adresa = "";
         this.isMarried = false;
         nrStudenteve = 0;
-    }
+     }
 
     public String getEmri() {
         return this.emri;
-    }
-
-    public void setEmri(String emri) {
-        this.emri = emri;
     }
 
     public String getMbiemri() {
         return this.mbiemri;
     }
 
-    public void setMbiemri(String mbiemri) {
-        this.mbiemri = mbiemri;
-    }
-
     public int getNota() {
         return this.nota;
-    }
-
-    public void setNota(int nota) {
-        this.nota = nota;
     }
 
     public String getDitelindja() {
         return this.ditelindja;
     }
 
-    public void setDitelindja(String ditelindja) {
-        this.ditelindja = ditelindja;
-    }
-
     public String getAdresa() {
         return this.adresa;
-    }
-
-    public void setAdresa(String adresa) {
-        this.adresa = adresa;
     }
 
     public boolean getIsMarried() {
         return this.isMarried;
     }
 
-    public void setIsMarried(boolean isMarried) {
-        this.isMarried = isMarried;
-    }
-
     public int getNrStudenteve() {
         return nrStudenteve;
+    }
+
+    public void setEmri(String emri) {
+        this.emri = emri;
+    }
+
+    public void setMbiemri(String mbiemri) {
+        this.mbiemri = mbiemri;
+    }
+
+    public void setNota(int nota) {
+        this.nota = nota;
+    }
+
+    public void setDitelindja(String ditelindja) {
+        this.ditelindja = ditelindja;
+    }
+
+    public void setAdresa(String adresa) {
+        this.adresa = adresa;
+    }
+
+    public void setIsMarried(boolean isMarried) {
+        this.isMarried = isMarried;
     }
 
     public void setNrStudenteve(int nrStudenteven) {
         nrStudenteve = nrStudenteven;
     }
 
+
     public String toString() {
         return
                 "emri: " + this.emri +
-                        "mbiemri: " + this.mbiemri +
-                        "nota: " + this.nota +
-                        "ditelindja: " + this.ditelindja +
-                        "adresa: " + this.adresa +
-                        "isMarried: " + this.isMarried +
-                        "nrStudenteve: " + nrStudenteve +
-                        "}";
+                "mbiemri: " + this.mbiemri +
+                "nota: " + this.nota +
+                "ditelindja: " + this.ditelindja +
+                "adresa: " + this.adresa +
+                "isMarried: " + this.isMarried +
+                "nrStudenteve: " + nrStudenteve +
+                "";
     }
 }
