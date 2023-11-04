@@ -8,7 +8,7 @@ public class ClassObjectBuilder {
         ClassBuilder.GenerateClass()
                 .readFile(input)
                 .generate()
-                .extend(new ObjectAsClassExtension())
+                .extend(new GenerateDataTypeThatNotExist())
                 .build();
 
     }

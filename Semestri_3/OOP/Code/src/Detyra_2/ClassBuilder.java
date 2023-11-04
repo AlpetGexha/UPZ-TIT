@@ -114,7 +114,7 @@ public class ClassBuilder {
             return this;
         }
 
-        public Builder extend(ClassBuilderExtension extension) {
+        public Builder extend(ClassBuilderInterface extension) {
             extension.extend(this);
 
             return this;
