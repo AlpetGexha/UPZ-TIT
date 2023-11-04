@@ -166,28 +166,26 @@ Qëllimi është të ndajë ndërtimin e një objekti kompleks nga përfaqësimi
 .. qyto kom e me shkru pak per klasesn qysh e kom bo
 
 Perdorimi
-```java
- public static void main(String[] args) {
-        String input = "src/Detyra_2/input.txt";
-        
-        GenerateClass()
-                .readFile(input)
-                .generate()
-                .constructors()
-                .getters()
-                .setters()
-                .toStrings()
-                .build();
-//                .showCode();
-    }
-```
 
+```java
+ public static void main(String[]args){
+        GenerateClass()
+        .readFile(input)
+        .generate()
+        .constructors()
+        .getters()
+        .setters()
+        .toStrings()
+        .build();
+//      .showCode();
+        }
+```
 
 Por cka nese deshirojm te zgjerojm klassen pa pasur nevoj per te ndryshuar kodin ekzistues?
 
 Pershembull:
 
-Gjeneroj classat për Data Type qe nuk egzistojnë, **public Address address** mirepo pa e prekur klasen **Bulder**
+Gjeneroj classat për Data Type qe nuk egzistojnë, `public Address address` mirepo pa e modifikuar klasen **Bulder**
 
 Atehere ne kete rast perdorim **Open/Closed Principle**
 
