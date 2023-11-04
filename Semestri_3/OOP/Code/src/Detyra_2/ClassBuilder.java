@@ -192,8 +192,8 @@ public class ClassBuilder {
         private void generateDefaultConstructor() {
             codeBuilder.append("\n    public " + generator.className + "() {");
             for (AttributeObject attribute : generator.attributes) {
-                String type = attribute.dataType;
-                String name = attribute.variableName;
+                String type = attribute.getDataType();
+                String name = attribute.getVariableName();
 
                 if (type.equals("int")) {
                     codeBuilder.append("\n        " + attribute.staticReturn() + name + " = 0;");
@@ -230,7 +230,7 @@ public class ClassBuilder {
             codeBuilder.append("\n\n" + "    public String toString() {");
             codeBuilder.append("\n        return");
             for (AttributeObject attribute : generator.attributes) {
-                String name = attribute.variableName;
+                String name = attribute.getVariableName();
                 codeBuilder.append("\n                \"" + name + ": \" + " + attribute.staticReturn() + name + " +");
             }
             codeBuilder.append("\n                \"\";");
@@ -238,18 +238,18 @@ public class ClassBuilder {
         }
 
         private String printConstructorParameter(AttributeObject attribute) {
-            return attribute.dataType + " " + attribute.variableName + (attribute.isStatic ? "n" : "") +
+            return attribute.getDataType() + " " + attribute.getVariableName() + (attribute.isStatic() ? "n" : "") +
                     (generator.attributes.indexOf(attribute) == generator.attributes.size() - 1 ? "" : ", ");
         }
 
         private String printConstrucotorInitialize(AttributeObject attribute) {
-            return "\n        " + attribute.staticReturn() + attribute.variableName + " = " + attribute.variableName + (attribute.isStatic ? "n" : "") + ";";
+            return "\n        " + attribute.staticReturn() + attribute.getVariableName() + " = " + attribute.getVariableName() + (attribute.isStatic() ? "n" : "") + ";";
         }
 
         private String printSetter(AttributeObject attribute) {
-            String type = attribute.dataType;
-            String name = attribute.variableName;
-            String isStatic = attribute.isStatic ? "n" : "";
+            String type = attribute.getDataType();
+            String name = attribute.getVariableName();
+            String isStatic = attribute.isStatic() ? "n" : "";
 
             return "\n" +
                     "    public void set" + pascalCase(name) + "(" + type + " " + (name + isStatic) + ") {" + "\n" +
@@ -260,8 +260,8 @@ public class ClassBuilder {
 
         private String printGetter(AttributeObject attribute) {
 
-            String type = attribute.dataType;
-            String name = attribute.variableName;
+            String type = attribute.getDataType();
+            String name = attribute.getVariableName();
 
             return "\n" +
                     "    public " + type + " get" + pascalCase(name) + "() {" + "\n" +
@@ -309,6 +309,5 @@ public class ClassBuilder {
             }
 
         }
-
     }
 }

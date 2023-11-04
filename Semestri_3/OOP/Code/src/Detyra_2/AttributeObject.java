@@ -1,12 +1,12 @@
 package Detyra_2;
 
 public class AttributeObject {
-    public boolean isStatic = false;
-    public boolean isFinal = false;
-    public String accessModifier;
-    public String dataType;
-    public String variableName;
-    public String value;
+    private boolean isStatic = false;
+    private boolean isFinal = false;
+    private String accessModifier;
+    private String dataType;
+    private String variableName;
+    private String value;
 
     public AttributeObject(String attribute) {
         String tmp = attribute;
@@ -67,4 +67,51 @@ public class AttributeObject {
         return (isStatic) ? "" : "this.";
     }
 
+    public String getDataType() {
+        return this.dataType;
+    }
+
+    public void setDataType(String dataType) {
+        this.dataType = dataType;
+    }
+
+    public String getVariableName() {
+        return this.variableName;
+    }
+
+    public void setVariableName(String variableName) {
+        this.variableName = variableName;
+    }
+
+    public boolean isStatic() {
+        return this.isStatic;
+    }
+
+    public void setStatic(boolean aStatic) {
+        this.isStatic = aStatic;
+    }
+
+    public boolean isFinal() {
+        return this.isFinal;
+    }
+
+    public void setFinal(boolean aFinal) {
+        this.isFinal = aFinal;
+    }
+
+    public String getAccessModifier() {
+        return this.accessModifier;
+    }
+
+    public void setAccessModifier(String accessModifier) {
+        this.accessModifier = accessModifier;
+    }
+
+    public String getValue() {
+        return this.value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
 }
