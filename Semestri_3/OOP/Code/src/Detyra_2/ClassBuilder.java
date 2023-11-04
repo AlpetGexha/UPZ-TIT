@@ -4,11 +4,11 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClassGenerator {
+public class ClassBuilder {
     public final List<AttributeObject> attributes;
     private String className;
 
-    private ClassGenerator() {
+    public ClassBuilder() {
         attributes = new ArrayList<>();
     }
 
@@ -37,21 +37,31 @@ public class ClassGenerator {
                 .getters()
                 .setters()
                 .toStrings()
+
                 .build();
+//                .showCode();
     }
 
     public static class Builder {
-        private final ClassGenerator generator;
+        private final ClassBuilder generator;
         private final StringBuilder codeBuilder;
-        private PrintWriter writer;
 
         public Builder() {
-            generator = new ClassGenerator();
+            generator = new ClassBuilder();
             codeBuilder = new StringBuilder();
         }
 
         private static String pascalCase(String name) {
             return name.substring(0, 1).toUpperCase() + name.substring(1);
+        }
+
+        //        return the codeBuilder
+        public StringBuilder getCodeBuilder() {
+            return codeBuilder;
+        }
+
+        public ClassBuilder getGenerator() {
+            return generator;
         }
 
         public Builder readFile(String file) {
@@ -100,6 +110,12 @@ public class ClassGenerator {
 
         public Builder toStrings() {
             generateToString();
+
+            return this;
+        }
+
+        public Builder extend(ClassBuilderExtension extension) {
+            extension.extend(this);
 
             return this;
         }
@@ -257,7 +273,7 @@ public class ClassGenerator {
             codeBuilder.append("\n}");
         }
 
-        public void build() {
+        public Builder build() {
             closeClass();
 
             try {
@@ -265,7 +281,7 @@ public class ClassGenerator {
 
                 checkIfFileExists(fileName);
 
-                writer = new PrintWriter(new FileWriter(fileName));
+                PrintWriter writer = new PrintWriter(new FileWriter(fileName));
                 writer.write(codeBuilder.toString());
 
                 System.out.println("Class " + generator.className + " generated successfully!");
@@ -277,6 +293,7 @@ public class ClassGenerator {
                 System.out.println(e.getMessage());
             }
 
+            return this;
         }
 
         public void showCode() {
@@ -292,5 +309,6 @@ public class ClassGenerator {
             }
 
         }
+
     }
 }

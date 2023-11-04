@@ -2,8 +2,9 @@ public class Studentdadadasdads {
     public String emri = "Albana";
     public String mbiemri;
     public int nota = 4;
-    private String ditelindja;
+    private Date ditelindja;
     String adresa;
     boolean isMarried;
+    public ArrayList<String> testing;
     public static int nrStudenteve;
 }
