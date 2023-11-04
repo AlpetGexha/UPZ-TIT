@@ -160,9 +160,71 @@ objeckteve në OOP.
 
 Qëllimi është të ndajë ndërtimin e një objekti kompleks nga përfaqësimi i tij
 
-### UML Diagram
-
 ![img.png](img.png)
 ![img_1.png](img_1.png)
+
+.. qyto kom e me shkru pak per klasesn qysh e kom bo
+
+Perdorimi
+```java
+ public static void main(String[] args) {
+        String input = "src/Detyra_2/input.txt";
+        
+        GenerateClass()
+                .readFile(input)
+                .generate()
+                .constructors()
+                .getters()
+                .setters()
+                .toStrings()
+                .build();
+//                .showCode();
+    }
+```
+
+
+Por cka nese deshirojm te zgjerojm klassen pa pasur nevoj per te ndryshuar kodin ekzistues?
+
+Pershembull:
+
+Gjeneroj classat për Data Type qe nuk egzistojnë, **public Address address** mirepo pa e prekur klasen **Bulder**
+
+Atehere ne kete rast perdorim **Open/Closed Principle**
+
+**Open/Closed Principle** - Një klas duhet të jetë hapur për zgjerim, por e mbyllur për modifikim.
+
+![img_2.png](img_2.png)
+
+**Përshkrimi:**
+
+Pra ne mund te shtojm sa functiona te deshirojm pa ndryshuar kodin ekzistues.
+
+```java
+public class GenerateDataTypeThatNotExist implements ClassBuilderInterface {
+    public void extend(Builder builder) {...}
+}
+```
+
+```java
+public class GenerateMethod implements ClassBuilderInterface {
+    public void extend(Builder builder) {...}
+}
+```
+
+The mund ti thirrim kto funksione ne kete menyre:
+
+```java
+public static void main(String[]args){
+        String input="src/Detyra_2/input.txt";
+
+        ClassBuilder.GenerateClass()
+        .readFile(input)
+        .generate()
+        .extend(new GenerateDataTypeThatNotExist())
+        .extend(new GenerateMethod())
+        .extend(new GenerateToString())
+        .build();
+        }
+```
 
 
