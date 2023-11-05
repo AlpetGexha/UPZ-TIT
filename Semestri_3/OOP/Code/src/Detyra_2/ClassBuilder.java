@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClassBuilder {
+public class ClassBuilder implements ClassBuilderContract {
     public final List<AttributeObject> attributes;
     private String className;
 
@@ -37,9 +37,16 @@ public class ClassBuilder {
                 .getters()
                 .setters()
                 .toStrings()
-
                 .build();
 //                .showCode();
+    }
+
+    public List<AttributeObject> getAttributes() {
+        return attributes;
+    }
+
+    public String getClassName() {
+        return className;
     }
 
     public static class Builder {
@@ -114,7 +121,7 @@ public class ClassBuilder {
             return this;
         }
 
-        public Builder extend(ClassBuilderInterface extension) {
+        public Builder extend(ClassBuilderExpendInterface extension) {
             extension.extend(this);
 
             return this;

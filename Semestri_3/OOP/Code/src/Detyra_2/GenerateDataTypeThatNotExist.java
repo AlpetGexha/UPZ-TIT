@@ -2,7 +2,7 @@ package Detyra_2;
 
 import java.util.LinkedList;
 
-public class GenerateDataTypeThatNotExist implements ClassBuilderInterface {
+public class GenerateDataTypeThatNotExist implements ClassBuilderExpendInterface {
     private static void generateClassName(ClassBuilder.Builder builder, String className) {
         builder.getCodeBuilder().insert(0, "\nclass " + className + " {}");
     }

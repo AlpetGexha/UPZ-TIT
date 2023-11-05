@@ -1,5 +1,5 @@
 package Detyra_2;
 
-public interface ClassBuilderInterface {
+public interface ClassBuilderExpendInterface {
     void extend(ClassBuilder.Builder builder);
 }
