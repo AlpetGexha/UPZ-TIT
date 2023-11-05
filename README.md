@@ -9,3 +9,6 @@ Shenimet e Shkenca Kompjuterike (TIT)
   - [Arduino](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_2/Arduino)
   - [Protokollet e Internetit](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_2/Protokollet%20e%20Internetit)
   - [AO & SO](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_2/Arkitektura%20e%20Kompjuter%C3%ABve%20dhe%20Sistemet%20Operative/Asamble)
+
+- [Semestri 3](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_3/) 
+  - [Object Oriented Programming](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_3/OOP/)
