@@ -36,6 +36,7 @@ public class ClassBuilder implements ClassBuilderContract {
                 .constructors()
                 .getters()
                 .setters()
+                .extend(new GenerateDataTypeThatNotExist())
                 .toStrings()
                 .build();
 //                .showCode();
@@ -123,6 +124,12 @@ public class ClassBuilder implements ClassBuilderContract {
 
         public Builder extend(ClassBuilderExpendInterface extension) {
             extension.extend(this);
+
+            return this;
+        }
+
+        public Builder importJavaUnit() {
+            codeBuilder.insert(0, "import java.util.*;\n");
 
             return this;
         }

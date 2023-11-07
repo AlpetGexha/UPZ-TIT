@@ -10,15 +10,28 @@ public class GenerateDataTypeThatNotExist implements ClassBuilderExpendInterface
     public void extend(ClassBuilder.Builder builder) {
         LinkedList<String> builderList = new LinkedList<>();
 
-        for (AttributeObject attribute : builder.getGenerator().attributes) {
-            if (!isPrimitive(attribute.dataType)) {
-                builderList.add(attribute.dataType);
+        boolean isJavaUnit = false;
+
+        for (AttributeObject attribute : builder.getGenerator().getAttributes()) {
+            if (!isPrimitive(attribute.getDataType())) {
+                builderList.add(attribute.getDataType());
             }
+
+            if (isJavaUnit(attribute.getDataType()))
+                isJavaUnit = true;
         }
 
         for (String className : builderList) {
             generateClassName(builder, className);
         }
+
+        if (isJavaUnit)
+            builder.importJavaUnit();
+
+    }
+
+    private boolean isJavaUnit(String type) {
+        return (type.contains("<") && type.contains(">"));
     }
 
     private boolean isPrimitive(String type) {
