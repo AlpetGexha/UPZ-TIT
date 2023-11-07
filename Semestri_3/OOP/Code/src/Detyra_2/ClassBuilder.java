@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ClassBuilder implements ClassBuilderContract {
-    public final List<AttributeObject> attributes;
+    private final List<AttributeObject> attributes;
     private String className;
 
     public ClassBuilder() {
@@ -122,7 +122,7 @@ public class ClassBuilder implements ClassBuilderContract {
             return this;
         }
 
-        public Builder extend(ClassBuilderExpendInterface extension) {
+        public Builder extend(ClassBuilderExpendContract extension) {
             extension.extend(this);
 
             return this;

@@ -1,4 +1,4 @@
-public class Studentdadadasdads {
+public class Studentiii {
     public String emri = "Albana";
     public String mbiemri;
     public int nota = 4;
