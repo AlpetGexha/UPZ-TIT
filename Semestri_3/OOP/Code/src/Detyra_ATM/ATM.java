@@ -31,34 +31,54 @@ public class ATM {
         DataObject fromAccount = accountData.get(from);
         DataObject toAccount = accountData.get(to);
 
-        if (fromAccount == null || toAccount == null) {
-            System.out.println("One or both account numbers not found");
-            return; // Exit the method if one or both accounts are not found
+        if (!areAccountsValid(fromAccount, toAccount)) {
+            System.out.println("Transfer failed. Not Valid Account");
+            return;
         }
 
-        double fromBalance = fromAccount.getBalance();
-        double toBalance = toAccount.getBalance();
-
-        if (fromBalance >= amount) {
-            fromAccount.setBalance(fromBalance - amount);
-            toAccount.setBalance(toBalance + amount);
-
+        if (canTransferFunds(fromAccount, amount)) {
+            performTransfer(fromAccount, toAccount, amount);
             System.out.println("Transfer successful");
         } else {
             System.out.println("Insufficient funds");
         }
-
     }
 
+    private boolean areAccountsValid(DataObject fromAccount, DataObject toAccount) {
+        if (fromAccount == null || toAccount == null) {
+            System.out.println("One or both account numbers not found");
+            return false;
+        }
+        return true;
+    }
+
+    private boolean canTransferFunds(DataObject fromAccount, double amount) {
+        return fromAccount.getBalance() >= amount;
+    }
+
+    private void performTransfer(DataObject fromAccount, DataObject toAccount, double amount) {
+        double fromBalance = fromAccount.getBalance();
+        double toBalance = toAccount.getBalance();
+
+        fromAccount.setBalance(fromBalance - amount);
+        toAccount.setBalance(toBalance + amount);
+    }
+
+
     public void saveAccountData() {
-        try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(inputFile));
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(inputFile))){
             for (DataObject dataObject : accountData.values()) {
-                writer.write(dataObject.getCardNumber() + "," + dataObject.getName() + "," + dataObject.getBalance() + "\n");
+                writer.write(reWriteAccountData(dataObject));
             }
-            writer.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+    private String reWriteAccountData(DataObject dataObject){
+        return (dataObject.getCardNumber() + "," + dataObject.getName() + "," + dataObject.getBalance() + "\n");
+    }
+
+
 }
