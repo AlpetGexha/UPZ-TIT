@@ -33,9 +33,9 @@ public class File {
             System.out.println("SUCCESS");
 
         } catch (FileNotFoundException e) {
-            System.out.println("File not found");
+            System.out.println("Fajlli nuk u gjet");
         } catch (IOException e) {
-            System.out.println("Error reading or writing file");
+            System.out.println(e);
         }
     }
 }
