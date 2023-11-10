@@ -1,0 +1,3 @@
+Numri i rreshtave: 3 
+Numri i fjalve: 9 
+Numri i karaktereve: 35
