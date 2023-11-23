@@ -1,8 +1,12 @@
 package Test_1;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class Person {
-    private String mbiemri;
-    private String dataELindjes;
+    private final String mbiemri;
+    private final String dataELindjes;
     private String ID;
     private String emri;
 
@@ -56,6 +60,22 @@ public class Person {
         int vitiAktual = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);
 
         return vitiAktual - vitiLindjes;
+    }
+
+
+    public void saveToFile() {
+
+        try {
+
+            PrintWriter writer = new PrintWriter(new FileWriter("out_savetofile.txt", true));
+
+            writer.println(toString());
+            writer.close();
+
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+
     }
 
 }
