@@ -11,7 +11,7 @@ public class App1 {
         );
 
         Person pr = new Person(
-                "AB32",
+                "ABB32",
                 "Rinesa",
                 "Krasniqi",
                 "27/09/2004"
