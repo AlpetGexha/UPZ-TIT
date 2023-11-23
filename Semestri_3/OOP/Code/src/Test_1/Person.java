@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class Person {
-    private final String mbiemri;
-    private final String dataELindjes;
+    private String mbiemri;
+    private String dataELindjes;
     private String ID;
     private String emri;
 
