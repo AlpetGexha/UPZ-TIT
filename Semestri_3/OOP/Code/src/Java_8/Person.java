@@ -14,8 +14,7 @@ public class Person {
 	}
 	
 	public String toString() {
-		return id + ", " + emri + ", " + mbiemri 
-				+ ", " + ditelindja;
+		return id + ", " + emri + ", " + mbiemri + ", " + ditelindja;
 	}
 	
 	public void shtypTeDhenat() {
@@ -27,7 +26,9 @@ public class Person {
 		String [] dataL = ditelindja.split("/");
 		int vitiL = Integer.parseInt(dataL[2]);
 		GregorianCalendar g = new GregorianCalendar();
+
 		int vitiA = g.get(GregorianCalendar.YEAR);
+
 		return (vitiA - vitiL);
 	}
 	
