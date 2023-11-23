@@ -1,3 +1,5 @@
 AB32, MeShkronja, Krasniqi
 AB32, Alpet, Gexha
 ABB32, Rinesa, Krasniqi
+AB32, Alpet, Gexha
+ABB32, Rinesa, Krasniqi
