@@ -1,7 +1,7 @@
-package Detyra_ProjectManagement;
+package Detyra_ProjectManagement.Enum;
 
 public enum Role {
-    PROGRAMER,
+    PROGRAMMER,
     UEB_DESIGNER,
     DATABASE_DESIGNER,
     PROJECT_MANAGER,

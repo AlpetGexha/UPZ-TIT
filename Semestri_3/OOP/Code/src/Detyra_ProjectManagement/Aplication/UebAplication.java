@@ -1,6 +1,6 @@
-package Detyra_ProjectManagement;
+package Detyra_ProjectManagement.Aplication;
 
-public class UebAplication extends Projecti {
+public class UebAplication extends Project {
     String programingLanguage;
 
     public UebAplication(String emri, String deadline, String programingLanguage) {

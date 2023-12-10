@@ -1,6 +1,8 @@
 package Detyra_ProjectManagement;
 
-public class UebSite extends Projecti {
+import Detyra_ProjectManagement.Aplication.Project;
+
+public class UebSite extends Project {
     String url;
 
     public UebSite(String emri, String deadline, String url) {

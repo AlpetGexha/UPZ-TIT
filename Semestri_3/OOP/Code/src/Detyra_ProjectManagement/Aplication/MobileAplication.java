@@ -1,6 +1,6 @@
-package Detyra_ProjectManagement;
+package Detyra_ProjectManagement.Aplication;
 
-public class MobileAplication extends Projecti {
+public class MobileAplication extends Project {
     String platforma;
     String versioni;
 

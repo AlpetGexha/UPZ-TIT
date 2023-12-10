@@ -1,6 +1,7 @@
 package Detyra_ProjectManagement;
 
 import Detyra_ProjectManagement.Enum.Role;
+import Detyra_ProjectManagement.Aplication.Project;
 
 import java.util.ArrayList;
 

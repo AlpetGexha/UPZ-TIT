@@ -1,5 +1,6 @@
-package Detyra_ProjectManagement;
+package Detyra_ProjectManagement.Aplication;
 
+// abstract
 public class Project {
     String emri;
     String deadline;

@@ -4,14 +4,11 @@ import java.util.ArrayList;
 
 public class Firma {
     String emri;
-    ArrayList<Punotri> punetoret;
+    ArrayList<Puntori> punetoret;
 
-    @Override
-    public String toString() {
-        return "Firma{" +
-                "emri='" + emri + '\'' +
-                ", punetoret=" + punetoret +
-                '}';
+    public Firma(String emri, ArrayList<Puntori> punetoret) {
+        this.emri = emri;
+        this.punetoret = punetoret;
     }
 
     public String getEmri() {
@@ -22,16 +19,17 @@ public class Firma {
         this.emri = emri;
     }
 
-    public ArrayList<Punotri> getPunetoret() {
+    public ArrayList<Puntori> getPunetoret() {
         return punetoret;
     }
 
-    public void setPunetoret(ArrayList<Punotri> punetoret) {
+    public void setPunetoret(ArrayList<Puntori> punetoret) {
         this.punetoret = punetoret;
     }
 
-    public Firma(String emri, ArrayList<Punotri> punetoret) {
-        this.emri = emri;
-        this.punetoret = punetoret;
+    @Override
+    public String toString() {
+        return String.format("Firma: %s\nPunetoret: %s\n", emri, punetoret);
     }
+
 }
