@@ -1,17 +1,17 @@
 package Detyra_ProjectManagement;
 
-public class Projecti {
+public class Project {
     String emri;
     String deadline;
 
-    public Projecti(String emri, String deadline) {
+    public Project(String emri, String deadline) {
         this.emri = emri;
         this.deadline = deadline;
     }
 
     @Override
     public String toString() {
-        return "Projecti{" +
+        return "Project{" +
                 "emri='" + emri + '\'' +
                 ", deadline='" + deadline + '\'' +
                 '}';

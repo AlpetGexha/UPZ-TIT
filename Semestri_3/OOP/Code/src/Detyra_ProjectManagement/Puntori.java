@@ -1,16 +1,25 @@
 package Detyra_ProjectManagement;
 
+import Detyra_ProjectManagement.Enum.Role;
+
 import java.util.ArrayList;
 
-public class Punotri {
+public class Puntori {
     String personalID;
     Role role;
-    ArrayList<Projecti> projekte;
+    ArrayList<Project> projekte;
 
-    public Punotri(String personalID, Role role, ArrayList<Projecti> projekte) {
+    public Puntori(String personalID, Role role, ArrayList<Project> projekte) {
         this.personalID = personalID;
         this.role = role;
         this.projekte = projekte;
+    }
+
+    public Puntori(String personalID, Role role, Project projekte) {
+        this.personalID = personalID;
+        this.role = role;
+        this.projekte = new ArrayList<Project>();
+        this.projekte.add(projekte);
     }
 
     public String getPersonalID() {
@@ -29,20 +38,20 @@ public class Punotri {
         this.role = role;
     }
 
-    public ArrayList<Projecti> getProjekte() {
+    public ArrayList<Project> getProjekte() {
         return projekte;
     }
 
-    public void setProjekte(ArrayList<Projecti> projekte) {
+    public void setProjekte(ArrayList<Project> projekte) {
         this.projekte = projekte;
     }
 
     @Override
     public String toString() {
-        return "Punotri{" +
+        return "Puntori{" +
                 "personalID='" + personalID + '\'' +
                 ", role=" + role +
                 ", projekte=" + projekte +
-                '}';
+                '}' + "\n";
     }
 }
