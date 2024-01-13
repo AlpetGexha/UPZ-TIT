@@ -1,3 +1,0 @@
-Orkestra: Orkestra e Pergjithme
-Dirigjent: Titulli: Maestro, Person: Mejshtri 45
-Muzikantet: [Instrumenti: Violina Person: Muzikanti1 25 , Instrumenti: Piano Person: Muzikanti2 27 ]
