@@ -1,0 +1,11 @@
+c:\users\admin\documents\visual studio 2012\Projects\TripleDES\TripleDES\bin\Debug\TripleDES.exe.config
+c:\users\admin\documents\visual studio 2012\Projects\TripleDES\TripleDES\bin\Debug\TripleDES.exe
+c:\users\admin\documents\visual studio 2012\Projects\TripleDES\TripleDES\bin\Debug\TripleDES.pdb
+c:\users\admin\documents\visual studio 2012\Projects\TripleDES\TripleDES\obj\Debug\TripleDES.exe
+c:\users\admin\documents\visual studio 2012\Projects\TripleDES\TripleDES\obj\Debug\TripleDES.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\7.TripleDES\TripleDES\bin\Debug\TripleDES.exe.config
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\7.TripleDES\TripleDES\obj\Debug\TripleDES.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\7.TripleDES\TripleDES\obj\Debug\TripleDES.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\7.TripleDES\TripleDES\bin\Debug\TripleDES.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\7.TripleDES\TripleDES\bin\Debug\TripleDES.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\7.TripleDES\TripleDES\obj\Debug\TripleDES.csprojResolveAssemblyReference.cache

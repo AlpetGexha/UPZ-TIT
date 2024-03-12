@@ -1,0 +1,18 @@
+c:\users\betimi\documents\visual studio 2013\Projects\ShembulliHash\ShembulliHash\bin\Debug\ShembulliHash.exe.config
+c:\users\betimi\documents\visual studio 2013\Projects\ShembulliHash\ShembulliHash\bin\Debug\ShembulliHash.exe
+c:\users\betimi\documents\visual studio 2013\Projects\ShembulliHash\ShembulliHash\bin\Debug\ShembulliHash.pdb
+c:\users\betimi\documents\visual studio 2013\Projects\ShembulliHash\ShembulliHash\obj\Debug\ShembulliHash.csprojResolveAssemblyReference.cache
+c:\users\betimi\documents\visual studio 2013\Projects\ShembulliHash\ShembulliHash\obj\Debug\ShembulliHash.exe
+c:\users\betimi\documents\visual studio 2013\Projects\ShembulliHash\ShembulliHash\obj\Debug\ShembulliHash.pdb
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\5.Hash_funksionet\ShembulliHash\ShembulliHash\bin\Debug\ShembulliHash.exe.config
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\5.Hash_funksionet\ShembulliHash\ShembulliHash\obj\Debug\ShembulliHash.exe
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\5.Hash_funksionet\ShembulliHash\ShembulliHash\obj\Debug\ShembulliHash.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\ShembulliHash\ShembulliHash\bin\Debug\ShembulliHash.exe.config
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\ShembulliHash\ShembulliHash\obj\Debug\ShembulliHash.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\ShembulliHash\ShembulliHash\obj\Debug\ShembulliHash.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\ShembulliHash\ShembulliHash\bin\Debug\ShembulliHash.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\ShembulliHash\ShembulliHash\bin\Debug\ShembulliHash.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\ShembulliHash\ShembulliHash\obj\Debug\ShembulliHash.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\ShembulliHash\ShembulliHash\bin\Debug\ShembulliHash.exe.config
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\ShembulliHash\ShembulliHash\obj\Debug\ShembulliHash.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\ShembulliHash\ShembulliHash\obj\Debug\ShembulliHash.pdb

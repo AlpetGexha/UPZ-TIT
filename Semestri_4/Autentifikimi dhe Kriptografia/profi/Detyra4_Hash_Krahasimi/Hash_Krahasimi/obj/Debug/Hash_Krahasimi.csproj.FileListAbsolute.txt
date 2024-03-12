@@ -1,0 +1,29 @@
+c:\users\betimi\documents\visual studio 2013\Projects\Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.exe.config
+c:\users\betimi\documents\visual studio 2013\Projects\Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.exe
+c:\users\betimi\documents\visual studio 2013\Projects\Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.pdb
+c:\users\betimi\documents\visual studio 2013\Projects\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.csprojResolveAssemblyReference.cache
+c:\users\betimi\documents\visual studio 2013\Projects\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.exe
+c:\users\betimi\documents\visual studio 2013\Projects\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.pdb
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.exe.config
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.exe
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.pdb
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.exe.config
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.exe
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.exe.config
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.exe.config
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\5.Hash_funksionet\Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.pdb
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra4_Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.exe.config
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra4_Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.exe
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra4_Hash_Krahasimi\Hash_Krahasimi\bin\Debug\Hash_Krahasimi.pdb
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra4_Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra4_Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra4_Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra4_Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.exe
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra4_Hash_Krahasimi\Hash_Krahasimi\obj\Debug\Hash_Krahasimi.pdb
