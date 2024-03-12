@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shembull i Javascript</title>
+</head>
+
+<body>
+	<h2>Shembull i Javascript</h2>
+	<p>Ndezja e semaforit permes Javascript</p>
+	<button onclick="light(1)">Drita per kalim</button>
+	<img id="imazhi" src="kuq.jpg"></img>
+	<button onclick="light(0)">Drita per ndalje</button>
+</body>
+
+</html>
+
+<script>
+	function light(sw) {
+		var pic;
+
+		if (sw == 1) {
+			pic = "gjelbert.jpg"
+		} else {
+			pic = "kuq.jpg"
+		}
+		document.getElementById("imazhi").src = pic;
+	}
+</script>
