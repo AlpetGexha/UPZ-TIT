@@ -273,6 +273,23 @@ public class LinkedList2 {
         System.out.println();
     }
 
+    public int getIntexOfSmallesElement(){
+        Node tmp = head;
+        int index = 0;
+
+        int min = (int) tmp.data;
+
+        while(tmp != null) {
+            if ((int) tmp.data < min) {
+                min = (int) tmp.data;
+
+            }
+            tmp = tmp.next;
+        }
+
+        return -1;
+    }
+
     public class Node {
         Object data;
         Node next;
@@ -282,5 +299,6 @@ public class LinkedList2 {
             next = null;
         }
     }
+
 
 }
