@@ -1,0 +1,87 @@
+:root {
+    --color-1: #1e1b4b;
+    --color-2: #6366f1;
+    --color-3: rgb(15, 23, 42);
+}
+
+.active {
+    color: var(--color-1);
+}
+
+body {
+    font-family: 'Inter';
+    color: white;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+}
+
+.main {
+    border: 1px solid black;
+    background: var(--color-3);
+}
+
+.titulli {
+    font-size: 50px;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+}
+
+header {
+    background: var(--color-2);
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 5px;
+    color: white;
+}
+
+section {
+    background: var(--color-1);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+.city-article {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+    .city-article {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .city {
+        flex: 1 0 200px;
+        margin: 10px;
+    }
+}
+
+.city {
+    background: var(--color-2);
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+footer {
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    background: var(--color-1);
+}

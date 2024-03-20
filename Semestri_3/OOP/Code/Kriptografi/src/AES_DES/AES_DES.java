@@ -18,6 +18,8 @@ public class AES_DES {
 
     }
 
+//    ((char - a) + key) mod 26 + a
+
     public static String encrypt(String text, int key) {
         char[] chars = text.toCharArray();
         for (int i = 0; i < chars.length; i++) {
@@ -32,6 +34,7 @@ public class AES_DES {
         return new String(chars);
     }
 
+//    ((char - a) - key) mod 26 + a
     public static String decrypt(String text, int key) {
         char[] chars = text.toCharArray();
         for (int i = 0; i < chars.length; i++) {
