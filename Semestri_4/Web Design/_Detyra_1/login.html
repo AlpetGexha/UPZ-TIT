@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="img/logo.png" rel="icon" type="image/x-icon" sizes="192x192">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
-    <title>UPZ - Home</title>
+    <title>UPZ - Login</title>
 </head>
 
 <body
@@ -34,8 +35,9 @@
                         class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-800 dark:border-gray-700">
                         <li>
                             <a href="index.html"
-                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                                aria-current="page">Home</a>
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                Home
+                            </a>
                         </li>
                         <li>
                             <a href="galeria.html"
@@ -57,7 +59,7 @@
                         </li>
                         <li>
                             <a href="login.html"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">
                                 Login
                             </a>
                         </li>
@@ -85,12 +87,12 @@
                                         </label>
                                         <input type="email" name="email" id="email"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                                            placeholder="name@company.com" required="">
+                                            placeholder="Email" required>
                                     </div>
                                     <div>
                                         <label for="password"
                                             class="block mb-2 text-sm font-medium text-gray-900 ">Password</label>
-                                        <input type="password" name="password" id="password" placeholder="••••••••"
+                                        <input type="password" name="password" id="password" placeholder="How Strong its your PASSWORD"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                                             required="">
                                     </div>
@@ -134,7 +136,7 @@
     <footer class="bg-white shadow dark:bg-gray-800">
         <div class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-center">
             <span class="text-sm text-gray-500 text-center dark:text-gray-400">© 2024
-                <a href="index.html" class="hover:underline"> AlpetG™ </a>. All Rights Reserved.
+                <a href="index.html" class="hover:underline"> AlpetG™ </a>.
             </span>
         </div>
     </footer>
