@@ -1,0 +1,100 @@
+:root {
+    --color-1: #1e1b4b;
+    --color-2: #6366f1;
+    --color-3: rgb(15, 23, 42);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .logo img {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    background-color: var(--color-1);
+}
+
+.sitebar {
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16rem;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform;
+    overflow: hidden;
+    background-color: var(--color-2);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.links-menu .header {
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-style: bold;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+
+.sitebar .links-menu {
+    margin-top: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    border-radius: 0.375rem;
+    color: inherit;
+    text-decoration: none;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+    -o-border-radius: 0.375rem;
+}
+
+.menu-text {
+    margin-left: 1.50rem;
+}
+
+main {
+    /* margin-top: 100px; */
+    padding-top: 100px;
+    padding-left: 265px;
+}
+
+
+@media (min-width: 640px) {
+    .sitebar {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+}
