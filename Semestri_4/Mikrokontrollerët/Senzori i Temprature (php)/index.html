@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Sensor Data</title>
+</head>
+<body>
+
+<h2>Insert Sensor Data</h2>
+
+<form action="http://127.0.0.1:8090/index.php" method="POST">
+    <label for="temperature">Temperature:</label><br>
+    <input type="number" id="temperature" name="temperature" step="0.01" required><br>
+    
+    <label for="humidity">Humidity:</label><br>
+    <input type="number" id="humidity" name="humidity" step="0.01" required><br>
+    
+    <label for="deviceid">Device ID:</label><br>
+    <input type="text" id="deviceid" name="deviceid" required><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
