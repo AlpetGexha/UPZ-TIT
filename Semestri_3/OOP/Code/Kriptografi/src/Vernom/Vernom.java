@@ -9,11 +9,11 @@ public class Vernom {
 //    fcceqshd   xbmornyz
 
     public static void main(String[] args) {
-        String text = "fcceqshd";
-
+        String text = "gvfhv";
 //        String key = generateKey(text.length());
-        String key = "xbmornyz";
-
+        String key = "tpjwx";
+// "tpjwx"
+//        "gvfhv"
 
         String encrypted = encrypt(text, key);
         System.out.println("Key: " + key);
@@ -38,6 +38,10 @@ public class Vernom {
                 }
                 texts[i] = alf[index];
 
+                System.out.println(String.format("(%s %d - %s %d) = %d -> %s",
+                        texts[i], getIndexOf(alf,texts[i]), keys[i], getIndexOf(alf, keys[i]), Math.abs((int) alf[index] - keys[i]), texts[i])
+                );
+
             }
         }
 
@@ -56,7 +60,12 @@ public class Vernom {
                 if (index > 26) {
                     index -= 26;
                 }
+                char temp = texts[i];
                 texts[i] = alf[index];
+
+                System.out.println(String.format("(%s %d - %s %d) = %d -> %s",
+                        temp, getIndexOf(alf,temp), keys[i], getIndexOf(alf, keys[i]), (Math.abs((int) temp - keys[i]) % 26), texts[i])
+                );
             }
         }
 
@@ -70,5 +79,14 @@ public class Vernom {
             key.append(c);
         }
         return key.toString();
+    }
+
+    public static int getIndexOf(char[] array, char c) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == c) {
+                return i;
+            }
+        }
+        return -1;
     }
 }
