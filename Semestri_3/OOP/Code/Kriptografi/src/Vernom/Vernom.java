@@ -9,9 +9,9 @@ public class Vernom {
 //    fcceqshd   xbmornyz
 
     public static void main(String[] args) {
-        String text = "gvfhv";
-//        String key = generateKey(text.length());
-        String key = "tpjwx";
+        String text = "engjwllushe";
+       String key = generateKey(text.length());
+      //  String key = "tpjwx";
 // "tpjwx"
 //        "gvfhv"
 
