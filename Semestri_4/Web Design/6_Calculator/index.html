@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div>
+        <header id="screen">0</header>
+        <table>
+            <tr class="red">
+                <td></td>
+                <td onclick="ac()">AC</td>
+                <td onclick="c()">C</td>
+            </tr>
+
+            <tr class="red">
+                <td onclick="sendNumber('+')">+</td>
+                <td onclick="sendNumber('-')">-</td>
+                <td onclick="sendNumber('*')">*</td>
+            </tr>
+
+            <tr>
+                <td onclick="sendNumber(9)">9</td>
+                <td onclick="sendNumber(8)">8</td>
+                <td onclick="sendNumber(7)">7</td>
+            </tr>
+
+
+            <tr>
+                <td onclick="sendNumber(6)">6</td>
+                <td onclick="sendNumber(5)">5</td>
+                <td onclick="sendNumber(4)">4</td>
+            </tr>
+
+            <tr>
+                <td onclick="sendNumber(3)">3</td>
+                <td onclick="sendNumber(2)">2</td>
+                <td onclick="sendNumber(1)">1</td>
+            </tr>
+
+            <tr>
+                <td onclick="sendNumber('.')">.</td>
+                <td onclick="sendNumber(0)">0</td>
+                <td onclick="equalTo()">=</td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+
+</html>
