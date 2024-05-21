@@ -1,29 +1,18 @@
 package Java_6_LinkedList_2;
 
 public class LinkedList {
-	
-	//lista e lidhur eshte nje grup i nyjeve te lidhura njera me tjetren, linkedlist eshte strukture dinamike
-	
-	//krijimi i struktures se nyjes
 	public class Node {
-		//variablat e objekteve te klases Node
-		Object data; //e dhena qe permbahet ne nyjen
-		Node next; //referenca (treguesi, pointeri) qe tregon ne nyjen e ardhshme
-		
-		//konstruktori per inicializimin e variablave te objekteve te kesaj klase
+		Object data;
+		Node next;
 		public Node(Object d) {
 			data = d;
 			next = null;
 		}
 	}
-	
-	//variablat e objekteve te klases LinkedList
 	Node head, tail;
-	private int size; //size eshte e dukshme vetem brenda kesaj klase
-	
-	//konstruktori
+	private int size;
+
 	public LinkedList() {
-		//ne fillim lista e lidhur eshte e zbrazte
 		head = tail = null;
 		size = 0;
 	}
