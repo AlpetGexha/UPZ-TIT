@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Ushtrime 4 - HTML Format dhe HTML5</title>
 </head>
-<body>
-<h4>Forma me input Text </h4>
 
-	<form action="faqjadestinuese.html" method="GET" >
+<body>
+	<h4>Forma me input Text </h4>
+
+	<form action="faqjadestinuese.html" method="GET">
 		<label>Emri:</label><br>
 		<input type="text" name="emri"><br>
 		<label>Mbiemri:</label><br>
@@ -45,50 +47,51 @@
 	</form>
 
 	<h4>Butoni me Javascript<h4>
-	<form>
-		<button onclick="funksioni1()" >Regjistrohu</button>
-	</form>
+			<form>
+				<button onclick="funksioni1()">Regjistrohu</button>
+			</form>
 
-	<h4>HTML5 - Data List</h4>
-	<form action="faqjadestinuese.html" method="GET">
-		<input list="browsers" name="browser">
-		<datalist id="browsers">
-			<option value="IE">Internet Explorer</option>
-			<option value="Chr">Chrome</option>
-			<option value="FF">Firefox</option>
-			<option value="SF">Safari</option>
-		</datalist>
-	</form>
+			<h4>HTML5 - Data List</h4>
+			<form action="faqjadestinuese.html" method="GET">
+				<input list="browsers" name="browser">
+				<datalist id="browsers">
+					<option value="IE">Internet Explorer</option>
+					<option value="Chr">Chrome</option>
+					<option value="FF">Firefox</option>
+					<option value="SF">Safari</option>
+				</datalist>
+			</form>
 
-	<h4>HTML5 - Colorpicker</h4>
-	<form>
-		<input type="color" value="#FFFFFF" name="ngjyra">
-	</form>
+			<h4>HTML5 - Colorpicker</h4>
+			<form>
+				<input type="color" value="#FFFFFF" name="ngjyra">
+			</form>
 
-	<h4>HTML5 - Limiti i numrave</h4>
-	<form>
-		<label>Limiti i numrave (1-5)</label>
-		<input type="number" min="1" max="5" name="sasia">
-		<input type="submit" value="Dergo">
+			<h4>HTML5 - Limiti i numrave</h4>
+			<form>
+				<label>Limiti i numrave (1-5)</label>
+				<input type="number" min="1" max="5" name="sasia">
+				<input type="submit" value="Dergo">
 
-		<label>Caktoni ditelindjen:</label>
-		<input type="date" name="bdate">
-		<input type="submit" value="Dergo">
-	</form>
+				<label>Caktoni ditelindjen:</label>
+				<input type="date" name="bdate">
+				<input type="submit" value="Dergo">
+			</form>
 
-	<h4>HTML5 - Caktimi i range</h4>
-	<form oninput="x.value = parseInt(a.value)+parseInt(b.value)">
-		<input type="range" id="a" name="a" value="100">100+
-		<input type="number" id="b" name="b" value="50">
-		<output name="x" for="a b"></output>
-		<input type="submit">
-	</form>
+			<h4>HTML5 - Caktimi i range</h4>
+			<form oninput="x.value = parseInt(a.value)+parseInt(b.value)">
+				<input type="range" id="a" name="a" value="100">100+
+				<input type="number" id="b" name="b" value="50">
+				<output name="x" for="a b"></output>
+				<input type="submit">
+			</form>
 
 </body>
 
 <script>
-	function funksioni1(){
+	function funksioni1() {
 		alert("Jeni regjistruar me sukses!")
 	}
 </script>
+
 </html>

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shembull i Javascript</title>
 </head>
+
 <body>
 	<h2>Shembull i Javascript</h2>
 	<p>Ndezja e semaforit permes Javascript</p>
 	<button onclick="light(1);">Drita e ndezur</button>
-	<img id="imazhi"/>
+	<img id="imazhi" />
 	<button onclick="light(0);">Drita e ndalur</button>
 </body>
 
@@ -18,12 +21,12 @@
 
 		if (sw == 1) {
 			pic = "semafori_gjelbert.jpg"
-		}
-		else {
+		} else {
 			pic = "semafori_kuq.jpg"
 		}
 
 		document.getElementById("imazhi").src = pic;
 	}
 </script>
+
 </html>
