@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas dhe SVG ne HTML5</title>
+	<style>
+		svg, canvas{
+			border: 1px solid black;
+		}
+	</style>
+
+</head>
+<body>
+
+	<h1>Manipulimet ne SVG</h1>
+	<svg width="300" height="300">
+		<rect x="50" y="50" width="200" height = "100" 
+		style="fill:white; stroke:black;" ></rect>
+		
+	</svg>
+
+	<svg width="300" height="300">
+		<line x1="50" y1="50" x2="250" y2="150"
+		style="stroke: black; stroke-width: 3"></line>
+
+	</svg>
+
+	<svg width="300" height="300">
+		<text x="20" y="30" style="fill:red; font-size: 22px;">Pershendetje!</text>
+		<text x="20" y="30" dx="0" dy="40" style="font-size: 14px;">Ky tekst eshte i bashkengjitur ne SVG</text>
+	</svg>
+
+
+	<h1>Manipulimet ne Canvas</h1>
+	<canvas id="canvas1" width="300" height="300"></canvas>
+	<canvas id="canvas2" width="300" height="300"></canvas>
+	<canvas id="canvas3" width="300" height="300"></canvas>
+</body>
+
+	<script>
+		window.onload = function() {
+
+			var canvas1 = document.getElementById("canvas1");
+			var context = canvas1.getContext("2d");
+			context.moveTo(50,150);
+			context.lineTo(250,50);
+			context.stroke();
+
+
+			var canvas2 = document.getElementById("canvas2");
+			var context2 = canvas2.getContext("2d");
+			context2.rect(50,50,200,100);
+			context2.stroke();
+
+			var canvas3 = document.getElementById("canvas3");
+			var context3 = canvas3.getContext("2d");
+			context3.arc(150,100,70,0,2*Math.PI, false);
+			context3.fillStyle = "yellow";
+			context3.fill();
+			context3.lineWidth = 5;
+			context3.strokeStyle = "green";
+			context3.stroke();
+
+
+		}
+	</script>
+</html>
