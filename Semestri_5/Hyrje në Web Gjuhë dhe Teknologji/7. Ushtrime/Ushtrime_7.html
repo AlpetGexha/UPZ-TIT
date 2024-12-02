@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ushtrime 7</title>
+</head>
+
+<body>
+
+	<h3>Video</h3>
+	<video id="video1" width="320" height="240" controls>
+		<source src="video.mp4" type="video/mp4">
+	</video>
+
+	<button onclick="makeBig();">Zmadho</button>
+	<button onclick="makeSmall();">Zvogelo</button>
+
+	<h3>Video me autoplay</h3>
+	<video width="320" height="240" autoplay>
+		<source src="video.mp4" type="video/mp4">
+	</video>
+
+
+	<h3>Video me autoplay dhe muted</h3>
+	<video width="320" height="240" autoplay muted>
+		<source src="video.mp4" type="video/mp4">
+	</video>
+
+
+	<h3>Audio</h3>
+	<audio controls>
+		<source src="audio.mp3" type="audio/mp3">
+	</audio>
+
+	<h3>Audio autoplay</h3>
+	<audio controls autoplay>
+		<source src="audio.mp3" type="audio/mp3">
+	</audio>
+
+	<h3>Audio autoplay</h3>
+	<audio controls autoplay muted>
+		<source src="audio.mp3" type="audio/mp3">
+	</audio>
+
+	<h3>IFrame video</h3>
+	<iframe id="stream" src="video.mp4"></iframe>
+
+	<h3>IFrame sound</h3>
+	<iframe src="audio.mp3"></iframe>
+
+	<h3>IFrame external</h3>
+	<iframe src="https://www.youtube.com/embed/YQHsXMglC9A?si=cjoyj7am_Fon6R5u&amp"></iframe>
+
+	<h3>Embed</h3>
+	<embed src="https://www.youtube.com/embed/YQHsXMglC9A?si=cjoyj7am_Fon6R5u&amp" />
+
+	<h3>Object</h3>
+	<object data="http://www.youtube.com/embed/XGSy3_Czz8k" />
+
+
+
+</body>
+
+<script type="text/javascript">
+	var myVideo = document.getElementById("video1");
+
+	function makeBig() {
+		myVideo.width = 560;
+	}
+
+	function makeSmall() {
+		myVideo.width = 100;
+	}
+</script>
+
+</html>

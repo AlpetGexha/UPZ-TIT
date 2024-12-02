@@ -1,0 +1,48 @@
+div {
+	background-color: #1e6346;
+	margin: 50px;
+	width: 350px;
+	height: 550px;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+header {
+	background-color: #d1e0e0;
+	width: 330px;
+	height: 100px;
+	border-radius: 20px;
+	margin: 0 auto;
+	font-size: xxx-large;
+	color: #000;
+	text-align: center;
+	font-family: Arial;
+}
+
+table {
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 20px;
+	font-family: Arial;
+}
+
+td {
+	width: 110px;
+	height: 60px;
+	text-align: center;
+	font-family: Arial;
+	font-size: xx-large;
+}
+
+.red {
+	color: red;
+}
+
+td:hover {
+	background-color: grey;
+	border-radius: 20px;
+}

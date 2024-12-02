@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ushtrime 7</title>
+</head>
+
+<body>
+	<h3>Video</h3>
+	<video id="video1" width="320" height="240" controls>
+		<source src="video.mp4" type="video/mp4">
+	</video>
+
+	<input id="perdoruesi" type="number" placeholder="Sheno pikselat:"></input>
+	<button onclick="setVideoWidth();">Apliko</button>
+</body>
+
+<script type="text/javascript">
+	var myVideo = document.getElementById("video1");
+
+	function setVideoWidth() {
+		var userWidth = document.getElementById("perdoruesi").value;
+
+		myVideo.width = userWidth;
+	}
+</script>
+
+</html>
