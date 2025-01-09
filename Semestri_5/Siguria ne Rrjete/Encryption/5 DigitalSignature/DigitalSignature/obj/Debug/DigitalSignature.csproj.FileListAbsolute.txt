@@ -1,0 +1,37 @@
+C:\Users\Betimi\Desktop\DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.exe.config
+C:\Users\Betimi\Desktop\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.csprojResolveAssemblyReference.cache
+C:\Users\Betimi\Desktop\DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.exe
+C:\Users\Betimi\Desktop\DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.pdb
+C:\Users\Betimi\Desktop\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.exe
+C:\Users\Betimi\Desktop\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.pdb
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\6.Digital Signature\DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.exe.config
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\6.Digital Signature\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.exe
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\6.Digital Signature\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.pdb
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.exe.config
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.exe
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.pdb
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.csprojAssemblyReference.cache
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.csproj.CoreCompileInputs.cache
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.exe
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.exe.config
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\6.Digital Signature\DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra5_DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.exe.config
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra5_DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.exe
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra5_DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.pdb
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra5_DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra5_DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra5_DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra5_DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.exe
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra5_DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.pdb
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra5_DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.exe.config
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra5_DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.exe
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra5_DigitalSignature\DigitalSignature\bin\Debug\DigitalSignature.pdb
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra5_DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.csproj.AssemblyReference.cache
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra5_DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.csproj.CoreCompileInputs.cache
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra5_DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.exe
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra5_DigitalSignature\DigitalSignature\obj\Debug\DigitalSignature.pdb

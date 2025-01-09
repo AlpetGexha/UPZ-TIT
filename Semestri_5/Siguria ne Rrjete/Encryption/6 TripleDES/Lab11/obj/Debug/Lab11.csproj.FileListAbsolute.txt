@@ -1,0 +1,19 @@
+E:\Visual Studio 12\Project\Lab11\Lab11\bin\Debug\Lab11.exe.config
+E:\Visual Studio 12\Project\Lab11\Lab11\bin\Debug\Lab11.exe
+E:\Visual Studio 12\Project\Lab11\Lab11\bin\Debug\Lab11.pdb
+E:\Visual Studio 12\Project\Lab11\Lab11\obj\Debug\Lab11.csprojResolveAssemblyReference.cache
+E:\Visual Studio 12\Project\Lab11\Lab11\obj\Debug\Lab11.Form1.resources
+E:\Visual Studio 12\Project\Lab11\Lab11\obj\Debug\Lab11.Properties.Resources.resources
+E:\Visual Studio 12\Project\Lab11\Lab11\obj\Debug\Lab11.csproj.GenerateResource.Cache
+E:\Visual Studio 12\Project\Lab11\Lab11\obj\Debug\Lab11.exe
+E:\Visual Studio 12\Project\Lab11\Lab11\obj\Debug\Lab11.pdb
+C:\Users\agexh\Desktop\Siguri ne rrjeta detyrat\Detyrat Siguri ne rrjeta\tripleDES-encryptSystem-master\Lab11\bin\Debug\Lab11.exe.config
+C:\Users\agexh\Desktop\Siguri ne rrjeta detyrat\Detyrat Siguri ne rrjeta\tripleDES-encryptSystem-master\Lab11\bin\Debug\Lab11.exe
+C:\Users\agexh\Desktop\Siguri ne rrjeta detyrat\Detyrat Siguri ne rrjeta\tripleDES-encryptSystem-master\Lab11\bin\Debug\Lab11.pdb
+C:\Users\agexh\Desktop\Siguri ne rrjeta detyrat\Detyrat Siguri ne rrjeta\tripleDES-encryptSystem-master\Lab11\obj\Debug\Lab11.csproj.AssemblyReference.cache
+C:\Users\agexh\Desktop\Siguri ne rrjeta detyrat\Detyrat Siguri ne rrjeta\tripleDES-encryptSystem-master\Lab11\obj\Debug\Lab11.Form1.resources
+C:\Users\agexh\Desktop\Siguri ne rrjeta detyrat\Detyrat Siguri ne rrjeta\tripleDES-encryptSystem-master\Lab11\obj\Debug\Lab11.Properties.Resources.resources
+C:\Users\agexh\Desktop\Siguri ne rrjeta detyrat\Detyrat Siguri ne rrjeta\tripleDES-encryptSystem-master\Lab11\obj\Debug\Lab11.csproj.GenerateResource.cache
+C:\Users\agexh\Desktop\Siguri ne rrjeta detyrat\Detyrat Siguri ne rrjeta\tripleDES-encryptSystem-master\Lab11\obj\Debug\Lab11.csproj.CoreCompileInputs.cache
+C:\Users\agexh\Desktop\Siguri ne rrjeta detyrat\Detyrat Siguri ne rrjeta\tripleDES-encryptSystem-master\Lab11\obj\Debug\Lab11.exe
+C:\Users\agexh\Desktop\Siguri ne rrjeta detyrat\Detyrat Siguri ne rrjeta\tripleDES-encryptSystem-master\Lab11\obj\Debug\Lab11.pdb

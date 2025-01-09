@@ -1,0 +1,90 @@
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA_ORA\bin\Debug\RSA_ORA.exe
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA_ORA\bin\Debug\RSA_ORA.pdb
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA_ORA\obj\x86\Debug\RSA_ORA.Form1.resources
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA_ORA\obj\x86\Debug\RSA_ORA.Properties.Resources.resources
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA_ORA\obj\x86\Debug\RSA_ORA.csproj.GenerateResource.Cache
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA_ORA\obj\x86\Debug\RSA_ORA.exe
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA_ORA\obj\x86\Debug\RSA_ORA.pdb
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA\obj\x86\Debug\RSA_ORA.exe
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA\obj\x86\Debug\RSA_ORA.pdb
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA\bin\Debug\RSA_ORA.exe
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA\bin\Debug\RSA_ORA.pdb
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA\obj\x86\Debug\RSA_ORA.Form1.resources
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA\obj\x86\Debug\RSA_ORA.Properties.Resources.resources
+D:\PERSONALE\FIEK\SiguriaRrjetave\Ushtrime2013\RSA\obj\x86\Debug\RSA_ORA.csproj.GenerateResource.Cache
+C:\Users\Betimi\Desktop\RSA_algoritmi\obj\x86\Debug\RSA_ORA.exe
+C:\Users\Betimi\Desktop\RSA_algoritmi\obj\x86\Debug\RSA_ORA.pdb
+C:\Users\Betimi\Desktop\RSA_algoritmi\bin\Debug\RSA_ORA.exe
+C:\Users\Betimi\Desktop\RSA_algoritmi\bin\Debug\RSA_ORA.pdb
+C:\Users\Betimi\Desktop\RSA_algoritmi\obj\x86\Debug\RSA_ORA.csprojResolveAssemblyReference.cache
+C:\Users\Betimi\Desktop\RSA_algoritmi\obj\x86\Debug\RSA_ORA.Form1.resources
+C:\Users\Betimi\Desktop\RSA_algoritmi\obj\x86\Debug\RSA_ORA.Properties.Resources.resources
+C:\Users\Betimi\Desktop\RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.GenerateResource.Cache
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.exe
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.pdb
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.exe
+D:\UPz\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.pdb
+D:\UPz_SD_2015-16\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.exe
+D:\UPz_SD_2015-16\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.pdb
+D:\1.UPz\1.UPz_SD_2015-16\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\bin\Debug\RSA_ORA.exe
+D:\1.UPz\1.UPz_SD_2015-16\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\bin\Debug\RSA_ORA.pdb
+D:\1.UPz\1.UPz_SD_2015-16\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.csprojResolveAssemblyReference.cache
+D:\1.UPz\1.UPz_SD_2015-16\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.Form1.resources
+D:\1.UPz\1.UPz_SD_2015-16\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.Properties.Resources.resources
+D:\1.UPz\1.UPz_SD_2015-16\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.GenerateResource.Cache
+D:\1.UPz\1.UPz_SD_2015-16\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.CoreCompileInputs.cache
+D:\1.UPz\1.UPz_SD_2015-16\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.exe
+D:\1.UPz\1.UPz_SD_2015-16\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.pdb
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\bin\Debug\RSA_ORA.exe
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\bin\Debug\RSA_ORA.pdb
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.csprojAssemblyReference.cache
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.Form1.resources
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.Properties.Resources.resources
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.GenerateResource.cache
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.CoreCompileInputs.cache
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.exe
+E:\USB_BetimMaloku\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\bin\Debug\RSA_ORA.exe.config
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\bin\Debug\RSA_ORA.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\bin\Debug\RSA_ORA.pdb
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.Form1.resources
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.Properties.Resources.resources
+C:\Users\Admin\Desktop\USB\UPz_Dimror_2020-21\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\bin\Debug\RSA_ORA.exe.config
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.exe
+C:\Users\Admin\Desktop\USB\UPz_Dimror\Siguria_ne_Rrjetat_e_ITve\Materiali\4.RSA\RSA_algoritmi\obj\x86\Debug\RSA_ORA.pdb
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\bin\Debug\RSA_ORA.exe.config
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\bin\Debug\RSA_ORA.exe
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\bin\Debug\RSA_ORA.pdb
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.Form1.resources
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.Properties.Resources.resources
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.exe
+C:\Users\HP\Desktop\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.pdb
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\bin\Debug\RSA_ORA.exe.config
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\bin\Debug\RSA_ORA.exe
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\bin\Debug\RSA_ORA.pdb
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.Form1.resources
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.Properties.Resources.resources
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.exe
+C:\Users\HP\Desktop\2022.2023 SEMSTRI DIMROR 2023\Detyrat_Siguri_te_rrjetes\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.pdb
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra3_RSA_algoritmi\bin\Debug\RSA_ORA.exe.config
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra3_RSA_algoritmi\bin\Debug\RSA_ORA.exe
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra3_RSA_algoritmi\bin\Debug\RSA_ORA.pdb
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.AssemblyReference.cache
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.Form1.resources
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.Properties.Resources.resources
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.GenerateResource.cache
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.csproj.CoreCompileInputs.cache
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.exe
+C:\Users\agexh\Downloads\Ushtrime-20241218T160803Z-001\Ushtrime\Detyra3_RSA_algoritmi\obj\x86\Debug\RSA_ORA.pdb

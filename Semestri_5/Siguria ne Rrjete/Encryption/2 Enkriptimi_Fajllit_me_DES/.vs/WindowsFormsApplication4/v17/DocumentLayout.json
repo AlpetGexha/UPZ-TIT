@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\agexh\\Desktop\\Siguri ne rrjeta detyrat\\Detyrat Siguri ne rrjeta\\2 Enkriptimi_Fajllit_me_DES\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB986517-07EA-4C5A-A314-C48E59AADF07}|WindowsFormsApplication4\\WindowsFormsApplication4.csproj|c:\\users\\agexh\\desktop\\siguri ne rrjeta detyrat\\detyrat siguri ne rrjeta\\2 enkriptimi_fajllit_me_des\\windowsformsapplication4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB986517-07EA-4C5A-A314-C48E59AADF07}|WindowsFormsApplication4\\WindowsFormsApplication4.csproj|solutionrelative:windowsformsapplication4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB986517-07EA-4C5A-A314-C48E59AADF07}|WindowsFormsApplication4\\WindowsFormsApplication4.csproj|C:\\Users\\agexh\\Desktop\\Siguri ne rrjeta detyrat\\Detyrat Siguri ne rrjeta\\2 Enkriptimi_Fajllit_me_DES\\windowsformsapplication4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DB986517-07EA-4C5A-A314-C48E59AADF07}|WindowsFormsApplication4\\WindowsFormsApplication4.csproj|solutionrelative:windowsformsapplication4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\agexh\\Desktop\\Siguri ne rrjeta detyrat\\Detyrat Siguri ne rrjeta\\2 Enkriptimi_Fajllit_me_DES\\WindowsFormsApplication4\\Form1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication4\\Form1.cs",
+              "ToolTip": "C:\\Users\\agexh\\Desktop\\Siguri ne rrjeta detyrat\\Detyrat Siguri ne rrjeta\\2 Enkriptimi_Fajllit_me_DES\\WindowsFormsApplication4\\Form1.cs",
+              "RelativeToolTip": "WindowsFormsApplication4\\Form1.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAjwG0AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T16:42:41.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\agexh\\Desktop\\Siguri ne rrjeta detyrat\\Detyrat Siguri ne rrjeta\\2 Enkriptimi_Fajllit_me_DES\\WindowsFormsApplication4\\Form1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication4\\Form1.cs",
+              "ToolTip": "C:\\Users\\agexh\\Downloads\\Detyra2_Enkriptimi_Fajllit_me_DES\\WindowsFormsApplication4\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\Detyra2_Enkriptimi_Fajllit_me_DES\\WindowsFormsApplication4\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T16:42:41.078Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
