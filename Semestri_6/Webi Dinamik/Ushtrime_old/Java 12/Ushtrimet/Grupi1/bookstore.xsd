@@ -1,0 +1,72 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+
+<!--definimi i llojeve te te dhenave-->
+<xs:simpleType name = "categoryType">
+	<xs:restriction base = "xs:string">
+		<xs:enumeration value = "Cooking"/>
+		<xs:enumeration value = "Children"/>
+		<xs:enumeration value = "Web"/>
+		<xs:enumeration value = "Programming"/>
+		<xs:enumeration value = "Drama"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name = "yearType">
+	<xs:restriction base = "xs:positiveInteger">
+		<xs:minInclusive value = "2000"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name = "priceType">
+	<xs:restriction base = "xs:decimal">
+		<xs:fractionDigits value = "2"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name = "isbnType">
+	<xs:restriction base = "xs:string">
+		<xs:pattern value = "[A-Za-z0-9]{9}"/>
+	</xs:restriction>
+</xs:simpleType>
+
+
+<!--definimi i elementeve te thjeshta-->
+<xs:element name = "author" type = "xs:string"/>
+<xs:element name = "category" type = "categoryType"/>
+<xs:element name = "year" type = "yearType"/>
+<xs:element name = "price" type = "priceType"/>
+
+<!--definimi i atributeve-->
+<xs:attribute name = "lang" type = "xs:string" default = "en"/>
+<xs:attribute name = "isbn" type = "isbnType"/>
+
+<!--definimi i elementeve komplekse-->
+<xs:element name "title" type = "xs:string">
+	<xs:attribute ref = "lang"/>
+</xs:element>
+
+<xs:element name = "book">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref = "title"/>
+			<xs:element ref = "author" maxOccurs = "10"/>
+			<xs:element ref = "category"/>
+			<xs:element ref = "year"/>
+			<xs:element ref = "price"/>
+		</xs:sequence>
+		<xs:attribute ref = "isbn"/>
+	</xs:complexType>
+
+</xs:element>
+
+<xs:element name = "bookstore">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref = "book" maxOccurs = "unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>

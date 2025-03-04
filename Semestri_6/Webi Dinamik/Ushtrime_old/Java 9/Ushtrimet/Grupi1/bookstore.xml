@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<bookstore>
+	<book category = "Programim">
+		<title lang = "en">Programming with XML</title>
+		<author>John Doe</author>
+		<date>2010</date>
+		<price>32.00</price>
+	</book>
+	
+	<book category = "Tragjedi">
+		<title lang = "alb">Makbethi</title>
+		<author>William Shakespeare</author>
+		<date>1890</date>
+		<price>12.00</price>
+	</book>
+	
+</bookstore>

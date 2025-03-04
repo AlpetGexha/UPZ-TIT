@@ -1,0 +1,28 @@
+<?xml version = "1.0"?>
+<!DOCTYPE banka [
+	<!ELEMENT banka (llogariaBankare+)>
+	<!ELEMENT llogariaBankare (numri, data, bilanci, mbajtesi)>
+	<!ATTLIST llogariaBankare lloji (debi|kredi) #REQUIRED>
+	<!ATTLIST llogariaBankare statusi (aktiv|pasiv) "aktiv">
+	
+	<!ELEMENT numri (#PCDATA)>
+	<!ELEMENT data (#PCDATA)>
+	<!ELEMENT bilanci (#PCDATA)>
+	<!ELEMENT mbajtesi (emri, mbiemri)>
+	<!ELEMENT emri (#PCDATA)>
+	<!ELEMENT mbiemri (#PCDATA)>
+	
+	<!ENTITY banka "TEB">
+]>
+
+<banka>
+	<llogariaBankare lloji = "debi" statusi = "aktiv">
+		<numri>123456</numri>
+		<data>10.01.2020</data>
+		<bilanci>230.70</bilanci>
+		<mbajtesi>
+			<emri>Filan</emri>
+			<mbiemri>Fisteku</mbiemri>
+		</mbajtesi>
+	</llogariaBankare>
+</banka>

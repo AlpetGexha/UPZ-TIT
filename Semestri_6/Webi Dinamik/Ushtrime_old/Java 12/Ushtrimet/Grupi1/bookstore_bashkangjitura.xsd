@@ -1,0 +1,52 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+<xs:element name = "bookstore">
+	<xs:complexType>
+	<xs:sequence>
+	<xs:element name = "book" maxOccurs = "unbounded">
+	<xs:complexType>
+	<xs:sequence>
+	<xs:element name "title" type = "xs:string">
+	<xs:attribute name = "lang" type = "xs:string" default = "en"/>
+	</xs:element>
+		<xs:element name = "author" type = "xs:string" maxOccurs = "10"/>
+		<xs:element name = "category">
+		<xs:simpleType name = "categoryType">
+		<xs:restriction base = "xs:string">
+		<xs:enumeration value = "Cooking"/>
+		<xs:enumeration value = "Children"/>
+		<xs:enumeration value = "Web"/>
+		<xs:enumeration value = "Programming"/>
+		<xs:enumeration value = "Drama"/>
+		</xs:restriction>
+		</xs:simpleType>
+		</xs:element>
+			<xs:element name = "year">
+			<xs:simpleType>
+			<xs:restriction base = "xs:positiveInteger">
+			<xs:minInclusive value = "2000"/>
+			</xs:restriction>
+			</xs:simpleType>
+			</xs:element>
+				<xs:element name = "price">
+				<xs:simpleType name = "priceType">
+				<xs:restriction base = "xs:decimal">
+				<xs:fractionDigits value = "2"/>
+				</xs:restriction>
+				</xs:simpleType>
+				</xs:element>
+				</xs:sequence>
+
+					<xs:attribute name = "isbn">
+					<xs:simpleType>
+					<xs:restriction base = "xs:string">
+					<xs:pattern value = "[A-Za-z0-9]{9}"/>
+					</xs:restriction>
+					</xs:simpleType>
+					</xs:attribute>
+	</xs:complexType>
+	</xs:element>
+	</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,19 @@
+	<!DOCTYPE gazeta [
+
+<!ELEMENT gazeta (artikulli+)>
+<!ELEMENT artikulli (kryetitulli, kryesuesi, trupi, shenimet)>
+<!ELEMENT kryetitulli (#PCDATA)>
+<!ELEMENT kryesuesi (#PCDATA)>
+<!ELEMENT trupi (#PCDATA)>
+<!ELEMENT shenimet (#PCDATA)>
+
+<!ATTLIST artikulli autori CDATA #REQUIRED>
+<!ATTLIST artikulli editori CDATA #IMPLIED>
+<!ATTLIST artikulli data CDATA #IMPLIED>
+<!ATTLIST artikulli botimi CDATA #IMPLIED>
+
+<!ENTITY gazeta "Koha Ditore">
+<!ENTITY publikuesi "Botimet Koha">
+<!ENTITY copyright "Copyright 2000 Botimet Koha">
+
+]>

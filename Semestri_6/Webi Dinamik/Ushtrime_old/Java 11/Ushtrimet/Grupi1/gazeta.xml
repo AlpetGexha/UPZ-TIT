@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE gazeta SYSTEM "gazeta.dtd">
+<gazeta>
+	<artikulli autori = "Autori 1" editori = "Editori 1">
+		<kryetitulli>Titulli 1</kryetitulli>
+		<kryesuesi>Filan Fisteku</kryesuesi>
+		<trupi>Permbajtja e artikullit 1</trupi>
+		<shenimet>Shenime shtese</shenimet>
+	</artikulli>
+	
+	<artikulli autori = "Autori 2" data = "06.05.2020">
+		<kryetitulli>Titulli 2</kryetitulli>
+		<kryesuesi>Test Testi</kryesuesi>
+		<trupi>Permbajtja e artikullit 2</trupi>
+		<shenimet>Shenime shtese</shenimet>
+	</artikulli>
+</gazeta>

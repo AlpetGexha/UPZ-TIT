@@ -1,0 +1,88 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<emails>
+	<email>
+		<header>
+			<from>
+				<name>John Doe</name>
+				<emailAddress>john.doe@gmail.com</emailAddress>
+			</from>
+			<to>
+				<name>Joe Doe</name>
+				<emailAddress>joe.doe@hotmail.com</emailAddress>
+			</to>
+			<to>
+				<name>Michelle Kellerman</name>
+				<emailAddress>m.kellerman@hotmail.com</emailAddress>
+			</to>
+			<date>2020-04-25</date>
+			<subject>Hello!</subject>
+		</header>
+		<body>This is message one!</body>
+
+	</email>
+	
+	<email>
+		<header>
+			<from>
+				<name>Fred Murray</name>
+				<emailAddress>fred.m@gmail.com</emailAddress>
+			</from>
+			<to>
+				<name>Jack Simpson</name>
+				<emailAddress>j.simpson@hotmail.com</emailAddress>
+			</to>
+			<date>2020-03-22</date>
+			<subject>Re: Subject1</subject>
+		</header>
+		<body>Excellent...</body>
+	</email>
+	
+	<email >
+		<header>
+			<from>
+				<name>Noah Ross</name>
+				<emailAddress>noah.ross@live.com</emailAddress>
+			</from>
+			<to>
+				<name>Emma Grant</name>
+				<emailAddress>emma.gt@hotmail.com</emailAddress>
+			</to>
+			<date>2020-01-21</date>
+			<subject>Results</subject>
+		</header>
+		<body>Results from exam 1...</body>
+	</email>
+	
+	<email>
+		<header>
+			<from>
+				<name>Emily Wilson</name>
+				<emailAddress>emily.watson@gmail.com</emailAddress>
+			</from>
+			<to>
+				<name>Mia Scott</name>
+				<emailAddress>mia.scott@gmail.com</emailAddress>
+			</to>
+			<date>2019-05-15</date>
+			<subject>Decision</subject>
+		</header>
+		<body>Attached with this email you can find the council's decision...</body>
+	</email>
+	
+	<email>
+		<header>
+			<from>
+				<name>Ella Reid</name>
+				<emailAddress>e.reid@hotmail.com</emailAddress>
+			</from>
+			<to>
+				<name>Grace Henderson</name>
+				<emailAddress>grace.henderson@gmail.com</emailAddress>
+			</to>
+			<date>2018-01-15</date>
+			<subject>Report</subject>
+		</header>
+		<body>This is the report of April month...</body>
+	</email>
+</emails>

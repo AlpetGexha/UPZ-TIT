@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation = "bookstore.xsd">
+
+<book isbn="12Ab37JFs1">
+  <title lang="en">Everyday Italian</title>
+  <author>Giada De Laurentiis</author>
+  <category>Cooking</category>
+  <year>2005</year>
+  <price>30.00</price>
+</book>
+
+<book isbn="12Ab37JFs2">
+  <title lang="en">Harry Potter</title>
+  <author>J K. Rowling</author>
+  <category>Children</category>
+  <year>2005</year>
+  <price>29.99</price>
+</book>
+
+<book isbn="12Ab37JFs3">
+  <title lang="en">XQuery Kick Start</title>
+  <author>James McGovern</author>
+  <author>Per Bothner</author>
+  <author>Kurt Cagle</author>
+  <author>James Linn</author>
+  <author>Vaidyanathan Nagarajan</author>
+  <category>Web</category>
+  <year>2003</year>
+  <price>49.99</price>
+</book>
+
+<book isbn="12Ab37JFs4">
+  <title lang="en">Learning XML</title>
+  <author>Erik T. Ray</author>
+  <category>Web</category>
+  <year>2003</year>
+  <price>39.95</price>
+</book>
+
+</bookstore>

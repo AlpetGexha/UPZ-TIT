@@ -1,0 +1,18 @@
+<!DOCTYPE emails [
+
+<!ELEMENT emails (email+)>
+
+<!ELEMENT email (header, body)>
+
+<!ELEMENT header (from, to+, date, subject?)>
+<!ELEMENT body (#PCDATA)>
+
+<!ELEMENT from (name, emailAddress)>
+<!ELEMENT to (name, emailAddress)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT emailAddress (#PCDATA)>
+
+]>

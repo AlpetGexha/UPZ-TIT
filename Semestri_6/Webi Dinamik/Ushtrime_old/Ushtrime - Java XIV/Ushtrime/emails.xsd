@@ -1,0 +1,72 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!--llojet e te dhenave (custom types)-->
+	
+	<xs:simpleType name = "nameType">
+		<xs:restriction base = "xs:string">
+			<xs:pattern value = "([A-Za-z])+[ ]([A-Za-z])+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name = "emailType">
+		<xs:restriction base = "xs:string">
+			<xs:pattern value = "([A-Za-z0-9._])+[@]([A-Za-z])+[.]([A-Za-z])+"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	
+	<!--elementet e thjeshta-->
+	<xs:element name = "body" type = "xs:string"/>
+	
+	<xs:element name = "date" type = "xs:date"/>
+	
+	<xs:element name = "subject" type = "xs:string"/>
+	
+	<xs:element name = "name" type = "nameType"/>
+	
+	<xs:element name = "emailAddress" type = "emailType"/>
+	
+	
+	<!--lloj kompleks i elementit-->
+	<xs:complexType name = "personEmail">
+		<xs:sequence>
+			<xs:element ref = "name"/>
+			<xs:element ref = "emailAddress"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!--elementet kompleske-->
+	<xs:element name = "from" type = "personEmail"/>
+	
+	<xs:element name = "to" type = "personEmail"/>
+	
+	<xs:element name = "header">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref = "from"/>
+				<xs:element ref = "to" maxOccurs = "unbounded"/>
+				<xs:element ref = "date"/>
+				<xs:element ref = "subject" minOccurs = "0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name = "email">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref = "header"/>
+				<xs:element ref = "body"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name = "emails">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref = "email" maxOccurs = "unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
