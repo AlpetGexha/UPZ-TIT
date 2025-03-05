@@ -1,8 +1,7 @@
-package TCP;
+package TCP.LiveChat;
 
 import java.io.*;
 import java.net.*;
-import java.util.Scanner;
 
 public class TCPServer {
     public static void main(String[] args) {
