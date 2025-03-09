@@ -24,3 +24,7 @@ Shenimet e Shkenca Kompjuterike (TIT)
   - [Hyrje në Web Gjuhë dhe Teknologji](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_5/Hyrje%20n%C3%AB%20Web%20Gjuh%C3%AB%20dhe%20Teknologji)
   - [Siguria ne Rrjete](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_5/Siguria%20ne%20Rrjete)
   - [Sistemet e Bazave të të Dhënave](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_5/Sistemet%20e%20Bazave%20t%C3%AB%20t%C3%AB%20Dh%C3%ABnave)
+ 
+- [Semestri 6](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_6)
+  - [Cloud Computing](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_5/Hyrje%20n%C3%AB%20Web%20Gjuh%C3%AB%20dhe%20Teknologji)
+  - [Webi Dinamik](https://github.com/AlpetGexha/UPZ-TIT/tree/main/Semestri_6/Webi%20Dinamik)
