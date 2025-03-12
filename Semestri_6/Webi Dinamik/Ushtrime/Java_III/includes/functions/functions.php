@@ -3,64 +3,74 @@
 function search(string $username): string
 {
     $file = fopen('db.txt', 'r');
-    $passDB = '';
-    while (! feof($file)) {
-        $rreshti = fgets($file);
-        if ($rreshti == '') {
+    if (!$file) {
+        return '';
+    }
+
+    while (($line = fgets($file)) !== false) {
+        $line = trim($line);
+        if ($line === '') {
             continue;
         }
-        $vargu = explode(',', $rreshti);
-        $userDB = $vargu[1];
+
+        [$name, $userDB, $passDB] = explode(',', $line);
+
         if ($username === $userDB) {
-            $passDB = $vargu[2];
             fclose($file);
-            break;
+            return $passDB;
         }
     }
 
-    return trim($passDB);
+    fclose($file);
+    return '';
 }
 
-function login($username, $password): void
+function login(string $username, string $password): void
 {
-    if ($username == '' || $password == '') {
-        echo "<p style = 'color: red;'>Te gjitha te dhenat duhet te plotesohen!</p>";
+    if (empty($username) || empty($password)) {
+        echo "<p style='color: red;'>All fields must be filled!</p>";
+        return;
+    }
+
+    $passDB = search($username);
+    if ($passDB === '') {
+        echo "<p style='color: red;'>This user does not exist!</p>";
+        return;
+    }
+
+    if ($password === $passDB) {
+        header('Location: home.php');
+        exit;
     } else {
-        $passDB = search($username);
-        if ($passDB !== '') {
-            if ($password == $passDB) {
-                //OK
-                //perdoruesi kycet
-                header('Location: home.php');
-            } else {
-                echo "<p style = 'color: red;'>Fjalekalimi nuk eshte i sakte!</p>";
-            }
-        } else {
-            echo "<p style = 'color: red;'>Ky perdorues nuk ekziston!</p>";
-        }
+        echo "<p style='color: red;'>Incorrect password!</p>";
     }
 }
 
-function register(?string $emri, ?string $username, ?string $password, $confirmPassword): void
+function register(?string $name, ?string $username, ?string $password, ?string $confirmPassword): void
 {
-    if ($emri == '' || $username == '' || $password == '' || $confirmPassword == '') {
-        echo "<p style = 'color: red;'>Te gjitha te dhenat duhet te plotesohen!</p>";
+    if (empty($name) || empty($username) || empty($password) || empty($confirmPassword)) {
+        echo "<p style='color: red;'>All fields must be filled!</p>";
+        return;
+    }
+
+    if ($password !== $confirmPassword) {
+        echo "<p style='color: red;'>Passwords do not match!</p>";
+        return;
+    }
+
+    if (search($username) !== '') {
+        echo "<p style='color: red;'>This user already exists!</p>";
+        return;
+    }
+
+    $line = sprintf("%s,%s,%s\n", $name, $username, $password);
+    $file = fopen('db.txt', 'a');
+    if ($file) {
+        fwrite($file, $line);
+        fclose($file);
+        header('Location: login.php');
+        exit;
     } else {
-        $passDB = search($username);
-        if ($passDB === '') {
-            if ($password == $confirmPassword) {
-                //OK
-                //regjistro user-in ne fajllin db
-                $rreshti = $emri . ',' . $username . ',' . $password . PHP_EOL;
-                $file = fopen('db.txt', 'a');
-                fwrite($file, $rreshti);
-                fclose($file);
-                header('Location: login.php');
-            } else {
-                echo "<p style = 'color: red;'>Fjalekalimet nuk perputhen!</p>";
-            }
-        } else {
-            echo "<p style = 'color: red;'>Ky perdorues ekziston!</p>";
-        }
+        echo "<p style='color: red;'>Failed to register user!</p>";
     }
 }
