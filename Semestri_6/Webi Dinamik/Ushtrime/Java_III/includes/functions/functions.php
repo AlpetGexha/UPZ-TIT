@@ -1,6 +1,6 @@
 <?php
 
-function search($username): string
+function search(string $username): string
 {
     $file = fopen('db.txt', 'r');
     $passDB = '';
@@ -11,7 +11,7 @@ function search($username): string
         }
         $vargu = explode(',', $rreshti);
         $userDB = $vargu[1];
-        if ($username == $userDB) {
+        if ($username === $userDB) {
             $passDB = $vargu[2];
             fclose($file);
             break;
@@ -27,7 +27,7 @@ function login($username, $password): void
         echo "<p style = 'color: red;'>Te gjitha te dhenat duhet te plotesohen!</p>";
     } else {
         $passDB = search($username);
-        if ($passDB != '') {
+        if ($passDB !== '') {
             if ($password == $passDB) {
                 //OK
                 //perdoruesi kycet
@@ -47,7 +47,7 @@ function register(?string $emri, ?string $username, ?string $password, $confirmP
         echo "<p style = 'color: red;'>Te gjitha te dhenat duhet te plotesohen!</p>";
     } else {
         $passDB = search($username);
-        if ($passDB == '') {
+        if ($passDB === '') {
             if ($password == $confirmPassword) {
                 //OK
                 //regjistro user-in ne fajllin db
