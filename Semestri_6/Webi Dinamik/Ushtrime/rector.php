@@ -7,12 +7,17 @@ use Rector\TypeDeclaration\Rector\ClassMethod\ReturnNeverTypeRector;
 use Rector\TypeDeclaration\Rector\Property\TypedPropertyFromStrictConstructorRector;
 
 return RectorConfig::configure()
-    // register single rule
+    ->withPaths([
+        __DIR__ . '/',
+    ])
+   ->withSkip([
+        '*/vendor/*',
+   ])
     ->withRules([
         TypedPropertyFromStrictConstructorRector::class,
         ReturnNeverTypeRector::class,
         ExplicitNullableParamTypeRector::class,
-        NullToStrictStringFuncCallArgRector::class
+        NullToStrictStringFuncCallArgRector::class,
     ])
     // here we can define, what prepared sets of rules will be applied
     ->withPreparedSets(
@@ -21,5 +26,5 @@ return RectorConfig::configure()
         typeDeclarations: true,
         privatization: true,
         earlyReturn: true,
-    )
-    ->withPhpSets();
+    );
+//    ->withPhpSets();

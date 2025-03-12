@@ -1,6 +1,6 @@
 <?php
 
-function search($username)
+function search($username): string
 {
     $file = fopen('db.txt', 'r');
     $passDB = '';
@@ -21,7 +21,7 @@ function search($username)
     return trim($passDB);
 }
 
-function login($username, $password)
+function login($username, $password): void
 {
     if ($username == '' || $password == '') {
         echo "<p style = 'color: red;'>Te gjitha te dhenat duhet te plotesohen!</p>";
@@ -41,7 +41,7 @@ function login($username, $password)
     }
 }
 
-function register($emri, $username, $password, $confirmPassword)
+function register(?string $emri, ?string $username, ?string $password, $confirmPassword): void
 {
     if ($emri == '' || $username == '' || $password == '' || $confirmPassword == '') {
         echo "<p style = 'color: red;'>Te gjitha te dhenat duhet te plotesohen!</p>";

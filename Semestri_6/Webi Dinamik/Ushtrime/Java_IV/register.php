@@ -6,8 +6,8 @@
 
 	<body>
 		<div id="container">
-			<?php include 'Includes/template/nav.php'; ?>
-			<?php include 'Includes/template/header.php'; ?>
+			<?php include __DIR__ . '/Includes/template/nav.php'; ?>
+			<?php include __DIR__ . '/Includes/template/header.php'; ?>
 			<div class="content main">
 				<div class="sec">
 					<h1>Register Form</h1>
@@ -62,7 +62,7 @@
 							<tr>
 								<td>
 								<?php
-                                echo "<span class='error'><span>";
+			                    echo "<span class='error'><span>";
 			?>
 								</td>
 								<td></td>
@@ -75,8 +75,8 @@
 					
 				</div>
 			</div>
-			<?php include 'Includes/template/aside.php'?>
-			<?php include 'Includes/template/footer.php'; ?>
+			<?php include __DIR__ . '/Includes/template/aside.php'?>
+			<?php include __DIR__ . '/Includes/template/footer.php'; ?>
 		</div>
 	</body>
 </html>

@@ -6,8 +6,8 @@
 
 	<body>
 		<div id="container">
-			<?php include 'Includes/template/nav.php'; ?>
-			<?php include 'Includes/template/header.php'; ?>
+			<?php include __DIR__ . '/Includes/template/nav.php'; ?>
+			<?php include __DIR__ . '/Includes/template/header.php'; ?>
 			<div class="content main">
 				<div class="sec">
 					<h1>Login Form</h1>
@@ -21,14 +21,14 @@
                         $username = $_POST['usernameLogin'];
                         $password = $_POST['passLogin'];
 
-                        include 'includes/functions/functions.php';
+                        include __DIR__ . '/includes/functions/functions.php';
                         login($username, $password);
                     }
 			?>
 				</div>
 			</div>
-			<?php include 'Includes/template/aside.php'?>
-			<?php include 'Includes/template/footer.php'; ?>
+			<?php include __DIR__ . '/Includes/template/aside.php'?>
+			<?php include __DIR__ . '/Includes/template/footer.php'; ?>
 		</div>
 	</body>
 </html>
