@@ -6,8 +6,8 @@
 
 	<body>
 		<div id="container">
-			<?php include __DIR__ . '/Includes/template/nav.php'; ?>
-			<?php include __DIR__ . '/Includes/template/header.php'; ?>
+			<?php include __DIR__ . '/includes/template/nav.php'; ?>
+			<?php include __DIR__ . '/includes/template/header.php'; ?>
 			<div class="content main">
 				<div class="sec">
 					<h1>Register Form</h1>
@@ -33,8 +33,8 @@
 			?>
 				</div>
 			</div>
-			<?php include __DIR__ . '/Includes/template/aside.php'?>
-			<?php include __DIR__ . '/Includes/template/footer.php'; ?>
+			<?php include __DIR__ . '/includes/template/aside.php'?>
+			<?php include __DIR__ . '/includes/template/footer.php'; ?>
 		</div>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-package TCP;
+package TCP.LiveChat;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -10,9 +10,9 @@ return RectorConfig::configure()
     ->withPaths([
         __DIR__ . '/',
     ])
-   ->withSkip([
+    ->withSkip([
         '*/vendor/*',
-   ])
+    ])
     ->withRules([
         TypedPropertyFromStrictConstructorRector::class,
         ReturnNeverTypeRector::class,
