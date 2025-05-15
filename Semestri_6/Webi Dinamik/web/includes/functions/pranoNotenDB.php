@@ -1,14 +1,20 @@
 <?php
 
-if (isset($_GET['studenti']) && isset($_GET['provimi'])) {
-    $studenti = $_GET['studenti'];
-    $provimi = $_GET['provimi'];
-
-    require 'connect.php';
-
-    mysqli_query($connect, "UPDATE rezultatet
-							SET transkripte = 1
-							WHERE studenti = '{$studenti}' AND provimi = '{$provimi}';");
-
+if (! isset($_GET['studenti']) || ! isset($_GET['provimi'])) {
     header('Location: ../../rezultatet.php');
+    exit();
 }
+
+require 'connect.php';
+
+$studenti = mysqli_real_escape_string($connect, $_GET['studenti']);
+$provimi = mysqli_real_escape_string($connect, $_GET['provimi']);
+
+$query = 'UPDATE rezultatet SET transkripte = 1 WHERE studenti = ? AND provimi = ?';
+$stmt = mysqli_prepare($connect, $query);
+mysqli_stmt_bind_param($stmt, 'ss', $studenti, $provimi);
+mysqli_stmt_execute($stmt);
+mysqli_stmt_close($stmt);
+
+header('Location: ../../rezultatet.php');
+exit();

@@ -4,7 +4,8 @@ session_start();
 if (! isset($_SESSION['username']) && ! isset($_SESSION['roli'])) {
     ?>
 
-<!DOCTYPE html>
+	<!DOCTYPE html>
+
 	<head>
 		<title>Login</title>
 		<link rel="stylesheet" type="text/css" href="Style/style.css">
@@ -26,11 +27,11 @@ if (! isset($_SESSION['username']) && ! isset($_SESSION['roli'])) {
     }
     ?>
 					<table>
-						<form action = "" method = "POST">
+						<form action="" method="POST">
 							<tr>
-								<td><input type = "text" name = "usernameLogin" placeholder = "Username" value = "<?php if (empty($errorUsername)) {
+								<td><input type="text" name="usernameLogin" placeholder="Username" value="<?php if (empty($errorUsername)) {
 								    echo $username;
-								}?>"></td>
+								} ?>"></td>
 							</tr>
 							<tr>
 								<td>
@@ -40,7 +41,7 @@ if (! isset($_SESSION['username']) && ! isset($_SESSION['roli'])) {
 								</td>
 							</tr>
 							<tr>
-								<td><input type = "password" name = "passLogin" placeholder = "Password"></td>
+								<td><input type="password" name="passLogin" placeholder="Password"></td>
 							</tr>
 							<tr>
 								<td>
@@ -51,24 +52,25 @@ if (! isset($_SESSION['username']) && ! isset($_SESSION['roli'])) {
 							</tr>
 							<tr>
 								<td>
-								<?php
-                                echo "<span class='error'>{$error}<span>";
+									<?php
+    echo "<span class='error'>{$error}<span>";
     ?>
 								</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><input type = "submit"></td>
+								<td><input type="submit"></td>
 							</tr>
 						</form>
 					</table>
 				</div>
 			</div>
-			<?php include 'Includes/template/aside.php'?>
+			<?php include 'Includes/template/aside.php' ?>
 			<?php include 'Includes/template/footer.php'; ?>
 		</div>
 	</body>
-</html>
+
+	</html>
 <?php
 } else {
     header('Location: home.php');

@@ -34,7 +34,7 @@ if (! isset($_SESSION['username']) && ! isset($_SESSION['roli'])) {
 							<tr>
 								<td>
 									<?php
-                                    echo "<span class='error'>{$errorEmri}<span>";
+								    echo "<span class='error'>{$errorEmri}<span>";
     ?>
 								</td>
 								<td>

@@ -1,19 +1,37 @@
 <?php
 
+if (! isset($_SESSION['username'])) {
+    echo "<option value=''>Session not active</option>";
+
+    return;
+}
+
 require 'includes/functions/connect.php';
 
 $userID = $_SESSION['username'];
 
-$query = mysqli_query($connect, "SELECT kodi, emri FROM lenda l, ligjerimet i WHERE l.kodi = i.lenda AND i.profesori = '{$userID}';");
+$query = 'SELECT DISTINCT l.kodi, l.emri
+          FROM lenda l
+          JOIN ligjerimet i ON l.kodi = i.lenda
+          WHERE i.profesori = ?
+          ORDER BY l.emri';
 
-$count = mysqli_num_rows($query);
+$stmt = mysqli_prepare($connect, $query);
+mysqli_stmt_bind_param($stmt, 's', $userID);
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
 
-if ($count === 0) {
-    echo "<option value = 'Nuk ka të dhëna'>Nuk ka të dhëna</option>";
-} else {
-    while ($row = mysqli_fetch_assoc($query)) {
-        $lenda = $row['emri'];
-        $lendaKodi = $row['kodi'];
-        echo "<option value = '{$lendaKodi}'>{$lenda}</option>";
-    }
+if (mysqli_num_rows($result) === 0) {
+    echo "<option value='Nuk ka të dhëna'>Nuk ka të dhëna</option>";
+    mysqli_stmt_close($stmt);
+
+    return;
 }
+
+while ($row = mysqli_fetch_assoc($result)) {
+    $lenda = htmlspecialchars($row['emri'], ENT_QUOTES, 'UTF-8');
+    $lendaKodi = htmlspecialchars($row['kodi'], ENT_QUOTES, 'UTF-8');
+    echo "<option value=\"{$lendaKodi}\">{$lenda}</option>";
+}
+
+mysqli_stmt_close($stmt);

@@ -2,7 +2,14 @@
 
 require 'includes/functions/connect.php';
 
-$query = mysqli_query($connect, 'SELECT * FROM lenda;');
+$query = 'SELECT kodi, emri, kredite, statusi FROM lenda ORDER BY emri';
+$result = mysqli_query($connect, $query);
+
+if (! $result) {
+    echo '<p>Error fetching courses: ' . mysqli_error($connect) . '</p>';
+
+    return;
+}
 
 echo "<table class = 'exams'>
 		<tr class = 'exams'>
@@ -13,11 +20,11 @@ echo "<table class = 'exams'>
 			<th class = 'exams'></th>
 		</tr>";
 
-while ($row = mysqli_fetch_assoc($query)) {
-    $kodi = $row['kodi'];
-    $emri = $row['emri'];
-    $kredite = $row['kredite'];
-    $statusi = $row['statusi'];
+while ($row = mysqli_fetch_assoc($result)) {
+    $kodi = htmlspecialchars($row['kodi'], ENT_QUOTES, 'UTF-8');
+    $emri = htmlspecialchars($row['emri'], ENT_QUOTES, 'UTF-8');
+    $kredite = htmlspecialchars($row['kredite'], ENT_QUOTES, 'UTF-8');
+    $statusi = htmlspecialchars($row['statusi'], ENT_QUOTES, 'UTF-8');
 
     echo "<tr class = 'exams'>
 			<td class = 'exams'>{$kodi}</td>
@@ -28,6 +35,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 		  </tr>";
 }
 
+mysqli_free_result($result);
 echo '</table>';
 
 ?>
