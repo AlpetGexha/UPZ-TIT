@@ -1,8 +1,8 @@
 <?php
 
-require "includes/functions/connect.php";
+require 'includes/functions/connect.php';
 
-$query = mysqli_query($connect, "SELECT * FROM lenda;");
+$query = mysqli_query($connect, 'SELECT * FROM lenda;');
 
 echo "<table class = 'exams'>
 		<tr class = 'exams'>
@@ -13,22 +13,22 @@ echo "<table class = 'exams'>
 			<th class = 'exams'></th>
 		</tr>";
 
-while($row = mysqli_fetch_assoc($query)) {
-	$kodi = $row['kodi'];
-	$emri = $row['emri'];
-	$kredite = $row['kredite'];
-	$statusi = $row['statusi'];
-	
-	echo "<tr class = 'exams'>
-			<td class = 'exams'>$kodi</td>
-			<td class = 'exams'>$emri</td>
-			<td class = 'exams'>$kredite</td>
-			<td class = 'exams'>$statusi</td>
-			<td class = 'exams'><a href = 'includes/functions/fshijLendetDB.php?kodi=$kodi' class = 'btn' onclick = 'return konfirmoFshirjen()'>Fshij</a></td>
+while ($row = mysqli_fetch_assoc($query)) {
+    $kodi = $row['kodi'];
+    $emri = $row['emri'];
+    $kredite = $row['kredite'];
+    $statusi = $row['statusi'];
+
+    echo "<tr class = 'exams'>
+			<td class = 'exams'>{$kodi}</td>
+			<td class = 'exams'>{$emri}</td>
+			<td class = 'exams'>{$kredite}</td>
+			<td class = 'exams'>{$statusi}</td>
+			<td class = 'exams'><a href = 'includes/functions/fshijLendetDB.php?kodi={$kodi}' class = 'btn' onclick = 'return konfirmoFshirjen()'>Fshij</a></td>
 		  </tr>";
 }
 
-echo "</table>";
+echo '</table>';
 
 ?>
 

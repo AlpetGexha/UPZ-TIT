@@ -1,12 +1,10 @@
 <?php
 
-require "includes/functions/connect.php";
+require 'includes/functions/connect.php';
 
-$query = mysqli_query($connect, "SELECT emri FROM departamenti;");
+$query = mysqli_query($connect, 'SELECT emri FROM departamenti;');
 
-while($row = mysqli_fetch_assoc($query)) {
-	$emri = $row['emri'];
-	echo "<option value = '$emri'>$emri</option>";
+while ($row = mysqli_fetch_assoc($query)) {
+    $emri = $row['emri'];
+    echo "<option value = '{$emri}'>{$emri}</option>";
 }
-
-?>

@@ -4,7 +4,7 @@
         "array_push": true,
         "backtick_to_shell_exec": true,
         "date_time_immutable": true,
-        "declare_strict_types": true,
+        "declare_strict_types": false,
         "lowercase_keywords": true,
         "lowercase_static_reference": true,
         "final_class": false,
