@@ -1,27 +1,28 @@
 body {
-	background-color: white;
-	font-family: Arial, sans-serif;
-	margin: 0;
-
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 .nav {
-	background-color: #000000;
-	padding: 20px;
+  background-color: #000000;
+  padding: 20px;
 }
 
 .nav a {
-	text-decoration: none;
-	color: #fff;
-	padding: 21px;
+  text-decoration: none;
+  color: #fff;
+  padding: 21px;
 }
 
 .nav a:hover {
-	background-color: #fff;
-	color: #000;
+  background-color: #fff;
+  color: #000;
 }
 
-input[type=text], select, input[type=password] {
+input[type="text"],
+select,
+input[type="password"] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -30,7 +31,7 @@ input[type=text], select, input[type=password] {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #000000;
   color: white;
   padding: 14px 20px;
@@ -40,25 +41,22 @@ input[type=submit] {
   cursor: pointer;
 }
 
-
 .header {
-	background-color: #f1f1f1;
-	padding: 80px;
-	text-align: center;
-	/*margin: 10px;*/
+  background-color: #f1f1f1;
+  padding: 80px;
+  text-align: center;
+  /*margin: 10px;*/
 }
 
 .content {
-
 }
-
 
 * {
   box-sizing: border-box;
 }
 
 .sec {
-	font-size: 15px;
+  font-size: 15px;
   line-height: 1.5;
   /*box-sizing: inherit;*/
   padding: 0.01em 16px;
@@ -68,65 +66,68 @@ input[type=submit] {
 }
 
 .content {
-	padding: 10px;
-	float: left;
+  padding: 10px;
+  float: left;
 }
 
 .content.main {
-	/*float: left;*/
-	width: 70%;
-	background-color: #fff;
+  /*float: left;*/
+  width: 70%;
+  background-color: #fff;
 }
 
 .content.aside {
-	/*float: right;*/
-	width: 30%;
-	background-color: #fff;
+  /*float: right;*/
+  width: 30%;
+  background-color: #fff;
 }
 
 .footer {
-	clear: both;
-	padding: 10px;
-	text-align: center;
-	background-color: #000000;
-	color: white;
+  clear: both;
+  padding: 10px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
 }
 
 span.error {
-	color: red;
-	font-size: 8pt;
+  color: red;
+  font-size: 8pt;
 }
 
-table.exams, td.exams, th.exams {  
+table.exams,
+td.exams,
+th.exams {
   text-align: left;
 }
 
 table.exams {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 //tr.exams:nth-child(even) {background-color: #ffffff;}
 
-
-th.exams, td.exams {
-	padding: 12px;
-	text-align: left;
-	border-bottom: 1px solid #ddd;
+th.exams,
+td.exams {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
 a.btn {
-	text-decoration: none;
-	background-color: #000000;
-	color: white;
-	padding: 10px 10px;
-	margin: 8px 0;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
+  text-decoration: none;
+  background-color: #000000;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
-	.content.main, .content.aside {
-		width: 100%;
-	}
+  .content.main,
+  .content.aside {
+    width: 100%;
+  }
 }
