@@ -19,7 +19,7 @@
                 echo "<a href = 'rezultatet.php'>Rezultatet</a>";
             }
         }
-        echo "<a href = '#'>Profile</a>";
+        echo "<a href = 'profile.php'>Profile</a>";
         echo "<a href = 'logout.php'>Logout</a>";
     }
 	?>
