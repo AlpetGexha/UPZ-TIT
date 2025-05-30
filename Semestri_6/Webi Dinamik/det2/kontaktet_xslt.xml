@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kontaktet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="kontaktet.xsd">
+<?xml-stylesheet type="text/xsl" href="kontaktet.xsl"?>
+<kontaktet>
     <kontakti>
         <personi>
             <emri>Filan</emri>
