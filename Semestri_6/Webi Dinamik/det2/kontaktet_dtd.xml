@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kontaktet SYSTEM "kontaktet.dtd">
+<kontaktet>
+    <kontakti>
+        <personi>
+            <emri>Filan</emri>
+            <mbiemri>Fisteku</mbiemri>
+        </personi>
+        <adresa>
+            <zipKodi>10000</zipKodi>
+            <rruga>Rr. Gjergj Fishta</rruga>
+            <qyteti>Prishtine</qyteti>
+        </adresa>
+        <telefoni lloji="fiks">029-123-456</telefoni>
+        <telefoni lloji="mobil">044-124-356</telefoni>
+        <emailAdresa>filan.fisteku@gmail.com</emailAdresa>
+    </kontakti>
+    <kontakti>
+        <personi>
+            <emri>Test</emri>
+            <mbiemri>Testi</mbiemri>
+        </personi>
+        <adresa>
+            <zipKodi>20000</zipKodi>
+            <rruga>Rr. Zahir Pajaziti</rruga>
+            <qyteti>Prizren</qyteti>
+        </adresa>
+        <telefoni lloji="fiks">029-126-453</telefoni>
+        <emailAdresa></emailAdresa>
+    </kontakti>
+    <kontakti>
+        <personi>
+            <emri>Filan</emri>
+            <mbiemri>Testi</mbiemri>
+        </personi>
+        <adresa>
+            <zipKodi>30000</zipKodi>
+            <rruga>Rr. Adem Jashari</rruga>
+            <qyteti>Prizren</qyteti>
+        </adresa>
+        <telefoni lloji="mobil">049-126-435</telefoni>
+        <emailAdresa>test.testi@gmail.com</emailAdresa>
+    </kontakti>
+</kontaktet>

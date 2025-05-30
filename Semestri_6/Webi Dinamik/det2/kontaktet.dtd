@@ -1,0 +1,13 @@
+<!ELEMENT kontaktet (kontakti+)>
+<!ELEMENT kontakti (personi, adresa, telefoni+, emailAdresa)>
+<!ELEMENT personi (emri, mbiemri)>
+<!ELEMENT adresa (zipKodi, rruga, qyteti)>
+<!ELEMENT telefoni (#PCDATA)>
+<!ELEMENT emailAdresa (#PCDATA)>
+<!ELEMENT emri (#PCDATA)>
+<!ELEMENT mbiemri (#PCDATA)>
+<!ELEMENT zipKodi (#PCDATA)>
+<!ELEMENT rruga (#PCDATA)>
+<!ELEMENT qyteti (#PCDATA)>
+
+<!ATTLIST telefoni lloji (fiks|mobil) "mobil">
